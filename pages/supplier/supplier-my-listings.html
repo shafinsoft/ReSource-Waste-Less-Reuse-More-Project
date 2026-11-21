@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; My Listings."
+      name="description"
+    />
+    <title>My Listings | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-login.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a class="sup-nav-link" href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a class="sup-nav-link" href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a class="sup-nav-link" href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a class="sup-nav-link" href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <a href="../../supplier-login.html" class="sup-logout-link">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>My Listings</h1>
+            <p>
+              Create and manage your available surplus and reusable materials.
+            </p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <div class="sup-toolbar">
+          <div class="sup-pill-row">
+            <a class="sup-pill active" href="#all-listings">All Listings (12)</a
+            ><a class="sup-pill" href="#active-listings">Active (8)</a
+            ><a class="sup-pill" href="#pending-listings">Pending (2)</a
+            ><a class="sup-pill" href="#paused-listings">Paused (1)</a
+            ><a class="sup-pill" href="#completed-listings">Completed (1)</a>
+          </div>
+          <a class="sup-btn green" href="#create-listing"
+            >+ Create New Listing</a
+          >
+        </div>
+        <div class="sup-summary-row">
+          <div class="sup-summary-box">
+            <span>Active listings</span><strong>8</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Pending review</span><strong>2</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Paused</span><strong>1</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Completed</span><strong>1</strong>
+          </div>
+        </div>
+        <p class="sup-muted sup-listing-count-note">
+          Showing 7 recent listings from your 12 total records.
+        </p>
+        <section class="sup-listing-grid" id="all-listings">
+          <article
+            class="sup-listing-card"
+            data-default-status="Active"
+            data-listing-key="pallets"
+            id="active-listings"
+          >
+            <img
+              alt="Reusable wooden pallets"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/wooden-pallets.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Used Wooden Pallets</h3>
+                <span class="sup-status active">Active</span>
+              </div>
+              <p>Reusable wood &middot; Used (Good) &middot; Dhaka</p>
+              <div class="sup-listing-price">৳ 300 / piece</div>
+              <div class="sup-details">
+                <p>Available: 200 pieces &middot; Updated Oct 24, 2026</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Used Wooden Pallets"
+                    class="sup-btn sm"
+                    href="#edit-pallets"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="pallets-status-choice">Listing status</label
+                      ><select id="pallets-status-choice" name="pallets_status">
+                        <option value="Draft">Draft</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option selected="selected" value="Active">
+                          Active
+                        </option>
+                        <option value="Paused">Paused</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Used Wooden Pallets&rdquo; will be
+                      available when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Pending Review"
+            data-listing-key="crates"
+            id="pending-listings"
+          >
+            <img
+              alt="Reusable plastic crates"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/selected-plastics.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Plastic Crates</h3>
+                <span class="sup-status review">Pending</span>
+              </div>
+              <p>Selected plastics &middot; Good &middot; Chattogram</p>
+              <div class="sup-listing-price">৳ 65 / piece</div>
+              <div class="sup-details">
+                <p>Available: 500 pieces &middot; Awaiting moderation</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Plastic Crates"
+                    class="sup-btn sm"
+                    href="#edit-crates"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="crates-status-choice">Listing status</label
+                      ><select id="crates-status-choice" name="crates_status">
+                        <option value="Draft">Draft</option>
+                        <option selected="selected" value="Pending Review">
+                          Pending Review
+                        </option>
+                        <option value="Active">Active</option>
+                        <option value="Paused">Paused</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Plastic Crates&rdquo; will be available
+                      when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Active"
+            data-listing-key="textile"
+            id="listing-textile"
+          >
+            <img
+              alt="Textile offcuts"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/textile-offcuts.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Fabric Offcuts</h3>
+                <span class="sup-status active">Active</span>
+              </div>
+              <p>Textile &middot; Mixed &middot; Gazipur</p>
+              <div class="sup-listing-price">৳ 40 / kg</div>
+              <div class="sup-details">
+                <p>Available: 300 kg &middot; Updated Oct 22, 2026</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Fabric Offcuts"
+                    class="sup-btn sm"
+                    href="#edit-textile"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="textile-status-choice">Listing status</label
+                      ><select id="textile-status-choice" name="textile_status">
+                        <option value="Draft">Draft</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option selected="selected" value="Active">
+                          Active
+                        </option>
+                        <option value="Paused">Paused</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Fabric Offcuts&rdquo; will be available
+                      when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Paused"
+            data-listing-key="cardboard"
+            id="paused-listings"
+          >
+            <img
+              alt="Cardboard packaging boxes"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/packaging-boxes.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Cardboard Boxes</h3>
+                <span class="sup-status paused">Paused</span>
+              </div>
+              <p>Packaging &middot; Good &middot; Rajshahi</p>
+              <div class="sup-listing-price">৳ 10 / piece</div>
+              <div class="sup-details">
+                <p>Available: 200 pieces</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Cardboard Boxes"
+                    class="sup-btn sm"
+                    href="#edit-cardboard"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="cardboard-status-choice">Listing status</label
+                      ><select
+                        id="cardboard-status-choice"
+                        name="cardboard_status"
+                      >
+                        <option value="Draft">Draft</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option value="Active">Active</option>
+                        <option selected="selected" value="Paused">
+                          Paused
+                        </option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Cardboard Boxes&rdquo; will be available
+                      when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Active"
+            data-listing-key="bottles"
+            id="listing-bottles"
+          >
+            <img
+              alt="Used plastic bottles"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/plastic-bottles.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Used Plastic Bottles</h3>
+                <span class="sup-status active">Active</span>
+              </div>
+              <p>Selected plastics &middot; Clean &middot; Dhaka</p>
+              <div class="sup-listing-price">৳ 50 / kg</div>
+              <div class="sup-details">
+                <p>Available: 500 kg</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Used Plastic Bottles"
+                    class="sup-btn sm"
+                    href="#edit-bottles"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="bottles-status-choice">Listing status</label
+                      ><select id="bottles-status-choice" name="bottles_status">
+                        <option value="Draft">Draft</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option selected="selected" value="Active">
+                          Active
+                        </option>
+                        <option value="Paused">Paused</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Used Plastic Bottles&rdquo; will be
+                      available when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Active"
+            data-listing-key="surplus"
+            id="listing-surplus"
+          >
+            <img
+              alt="Industrial surplus supplies"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/surplus-supplies.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Mixed Surplus Supplies</h3>
+                <span class="sup-status active">Active</span>
+              </div>
+              <p>Surplus supplies &middot; Mixed &middot; Narayanganj</p>
+              <div class="sup-listing-price">৳ 120 / kg</div>
+              <div class="sup-details">
+                <p>Available: 250 kg</p>
+                <div class="sup-inline-actions">
+                  <a
+                    aria-label="Edit Mixed Surplus Supplies"
+                    class="sup-btn sm"
+                    href="#edit-surplus"
+                    >Edit</a
+                  >
+                  <details class="sup-status-disclosure">
+                    <summary class="sup-btn outline sm">Manage status</summary>
+                    <div class="sup-status-options">
+                      <p class="sup-form-hint">
+                        Choose the availability state for this listing.
+                      </p>
+                      <label for="surplus-status-choice">Listing status</label
+                      ><select id="surplus-status-choice" name="surplus_status">
+                        <option value="Draft">Draft</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option selected="selected" value="Active">
+                          Active
+                        </option>
+                        <option value="Paused">Paused</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Unavailable">Unavailable</option></select
+                      ><small class="sup-status-stage-note"
+                        >Status saving will be connected in the JavaScript
+                        implementation stage.</small
+                      >
+                    </div>
+                  </details>
+                  <details class="sup-remove-disclosure">
+                    <summary class="sup-text-action danger-text">
+                      Remove
+                    </summary>
+                    <p class="sup-form-hint">
+                      Removing &ldquo;Mixed Surplus Supplies&rdquo; will be
+                      available when listing actions are connected.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="sup-listing-card"
+            data-default-status="Completed"
+            data-listing-key="storage-drums"
+            id="completed-listings"
+          >
+            <img
+              alt="Reusable storage drums and surplus supplies"
+              class="sup-material-thumb"
+              src="../../assets/images/materials/surplus-supplies.jpg"
+            />
+            <div class="sup-listing-body">
+              <div class="sup-listing-title">
+                <h3>Reusable Storage Drums</h3>
+                <span class="sup-status completed">Completed</span>
+              </div>
+              <p>Surplus supplies &middot; Used (Good) &middot; Chattogram</p>
+              <div class="sup-listing-price">৳ 180 / piece</div>
+              <div class="sup-details">
+                <p>40 pieces &middot; Exchange completed Oct 18, 2026</p>
+                <div class="sup-inline-actions">
+                  <a
+                    class="sup-btn outline sm"
+                    href="supplier-completed-record.html"
+                    >View record</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-pallets">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Used Wooden Pallets</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-pallets" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="pallets-edit-title">Listing title</label
+                ><input
+                  id="pallets-edit-title"
+                  name="title"
+                  required=""
+                  value="Used Wooden Pallets"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-category">Category</label
+                ><select id="pallets-edit-category" name="category">
+                  <option selected="">Reusable Wood</option>
+                  <option>Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-quantity">Available quantity</label
+                ><input
+                  id="pallets-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="200"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-unit">Unit</label
+                ><select id="pallets-edit-unit" name="unit">
+                  <option>kg</option>
+                  <option selected="">pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-condition">Condition</label
+                ><select id="pallets-edit-condition" name="condition">
+                  <option>New</option>
+                  <option selected="">Used (Good)</option>
+                  <option>Good</option>
+                  <option>Clean</option>
+                  <option>Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-price">Asking price (৳)</label
+                ><input
+                  id="pallets-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="300"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-price-type">Price type</label
+                ><select id="pallets-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-district">District / Location</label
+                ><input
+                  id="pallets-edit-district"
+                  name="district"
+                  required=""
+                  value="Dhaka"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="pallets-edit-status">Listing status</label
+                ><select id="pallets-edit-status" name="status">
+                  <option>Draft</option>
+                  <option>Pending Review</option>
+                  <option selected="">Active</option>
+                  <option>Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="pallets-edit-description">Description</label
+                ><textarea id="pallets-edit-description" name="description">
+Reusable wooden pallets in good condition, suitable for storage and industrial reuse.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-crates">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Plastic Crates</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-crates" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="crates-edit-title">Listing title</label
+                ><input
+                  id="crates-edit-title"
+                  name="title"
+                  required=""
+                  value="Plastic Crates"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-category">Category</label
+                ><select id="crates-edit-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option selected="">Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-quantity">Available quantity</label
+                ><input
+                  id="crates-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="500"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-unit">Unit</label
+                ><select id="crates-edit-unit" name="unit">
+                  <option>kg</option>
+                  <option selected="">pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-condition">Condition</label
+                ><select id="crates-edit-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option selected="">Good</option>
+                  <option>Clean</option>
+                  <option>Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-price">Asking price (৳)</label
+                ><input
+                  id="crates-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="65"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-price-type">Price type</label
+                ><select id="crates-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-district">District / Location</label
+                ><input
+                  id="crates-edit-district"
+                  name="district"
+                  required=""
+                  value="Chattogram"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="crates-edit-status">Listing status</label
+                ><select id="crates-edit-status" name="status">
+                  <option>Draft</option>
+                  <option selected="">Pending Review</option>
+                  <option>Active</option>
+                  <option>Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="crates-edit-description">Description</label
+                ><textarea id="crates-edit-description" name="description">
+Reusable plastic crates, inspected and sorted for industrial use.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-textile">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Fabric Offcuts</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-textile" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="textile-edit-title">Listing title</label
+                ><input
+                  id="textile-edit-title"
+                  name="title"
+                  required=""
+                  value="Fabric Offcuts"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-category">Category</label
+                ><select id="textile-edit-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option>Selected Plastics</option>
+                  <option selected="">Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-quantity">Available quantity</label
+                ><input
+                  id="textile-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="300"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-unit">Unit</label
+                ><select id="textile-edit-unit" name="unit">
+                  <option selected="">kg</option>
+                  <option>pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-condition">Condition</label
+                ><select id="textile-edit-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option>Good</option>
+                  <option>Clean</option>
+                  <option selected="">Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-price">Asking price (৳)</label
+                ><input
+                  id="textile-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="40"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-price-type">Price type</label
+                ><select id="textile-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-district">District / Location</label
+                ><input
+                  id="textile-edit-district"
+                  name="district"
+                  required=""
+                  value="Gazipur"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="textile-edit-status">Listing status</label
+                ><select id="textile-edit-status" name="status">
+                  <option>Draft</option>
+                  <option>Pending Review</option>
+                  <option selected="">Active</option>
+                  <option>Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="textile-edit-description">Description</label
+                ><textarea id="textile-edit-description" name="description">
+Mixed textile offcuts from garment production, stored dry and sorted.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-cardboard">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Cardboard Boxes</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-cardboard" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="cardboard-edit-title">Listing title</label
+                ><input
+                  id="cardboard-edit-title"
+                  name="title"
+                  required=""
+                  value="Cardboard Boxes"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-category">Category</label
+                ><select id="cardboard-edit-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option>Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option selected="">Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-quantity">Available quantity</label
+                ><input
+                  id="cardboard-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="200"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-unit">Unit</label
+                ><select id="cardboard-edit-unit" name="unit">
+                  <option>kg</option>
+                  <option selected="">pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-condition">Condition</label
+                ><select id="cardboard-edit-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option selected="">Good</option>
+                  <option>Clean</option>
+                  <option>Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-price">Asking price (৳)</label
+                ><input
+                  id="cardboard-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="10"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-price-type">Price type</label
+                ><select id="cardboard-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-district">District / Location</label
+                ><input
+                  id="cardboard-edit-district"
+                  name="district"
+                  required=""
+                  value="Rajshahi"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="cardboard-edit-status">Listing status</label
+                ><select id="cardboard-edit-status" name="status">
+                  <option>Draft</option>
+                  <option>Pending Review</option>
+                  <option>Active</option>
+                  <option selected="">Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="cardboard-edit-description">Description</label
+                ><textarea id="cardboard-edit-description" name="description">
+Used cardboard boxes in good condition for packaging and storage.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-bottles">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Used Plastic Bottles</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-bottles" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="bottles-edit-title">Listing title</label
+                ><input
+                  id="bottles-edit-title"
+                  name="title"
+                  required=""
+                  value="Used Plastic Bottles"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-category">Category</label
+                ><select id="bottles-edit-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option selected="">Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-quantity">Available quantity</label
+                ><input
+                  id="bottles-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="500"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-unit">Unit</label
+                ><select id="bottles-edit-unit" name="unit">
+                  <option selected="">kg</option>
+                  <option>pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-condition">Condition</label
+                ><select id="bottles-edit-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option>Good</option>
+                  <option selected="">Clean</option>
+                  <option>Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-price">Asking price (৳)</label
+                ><input
+                  id="bottles-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="50"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-price-type">Price type</label
+                ><select id="bottles-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-district">District / Location</label
+                ><input
+                  id="bottles-edit-district"
+                  name="district"
+                  required=""
+                  value="Dhaka"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="bottles-edit-status">Listing status</label
+                ><select id="bottles-edit-status" name="status">
+                  <option>Draft</option>
+                  <option>Pending Review</option>
+                  <option selected="">Active</option>
+                  <option>Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="bottles-edit-description">Description</label
+                ><textarea id="bottles-edit-description" name="description">
+Clean, sorted PET bottles available for recycling and reuse.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card sup-edit-section" id="edit-surplus">
+          <div class="sup-panel-head">
+            <h2>Edit Listing: Mixed Surplus Supplies</h2>
+            <a href="#all-listings">Back to listings</a>
+          </div>
+          <form action="#edit-surplus" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="surplus-edit-title">Listing title</label
+                ><input
+                  id="surplus-edit-title"
+                  name="title"
+                  required=""
+                  value="Mixed Surplus Supplies"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-category">Category</label
+                ><select id="surplus-edit-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option>Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option selected="">Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-quantity">Available quantity</label
+                ><input
+                  id="surplus-edit-quantity"
+                  min="0"
+                  name="quantity"
+                  required=""
+                  type="number"
+                  value="250"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-unit">Unit</label
+                ><select id="surplus-edit-unit" name="unit">
+                  <option selected="">kg</option>
+                  <option>pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-condition">Condition</label
+                ><select id="surplus-edit-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option>Good</option>
+                  <option>Clean</option>
+                  <option selected="">Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-price">Asking price (৳)</label
+                ><input
+                  id="surplus-edit-price"
+                  min="0"
+                  name="price"
+                  type="number"
+                  value="120"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-price-type">Price type</label
+                ><select id="surplus-edit-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-district">District / Location</label
+                ><input
+                  id="surplus-edit-district"
+                  name="district"
+                  required=""
+                  value="Narayanganj"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="surplus-edit-status">Listing status</label
+                ><select id="surplus-edit-status" name="status">
+                  <option>Draft</option>
+                  <option>Pending Review</option>
+                  <option selected="">Active</option>
+                  <option>Paused</option>
+                  <option>Reserved</option>
+                  <option>Unavailable</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="surplus-edit-description">Description</label
+                ><textarea id="surplus-edit-description" name="description">
+Mixed industrial surplus supplies available for suitable reuse.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Changes</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section class="sup-content-card" id="create-listing">
+          <h2>Create a Material Listing</h2>
+          <p class="sup-muted">
+            Complete the material information below. Add or update the material
+            information below.
+          </p>
+          <form action="#create-listing" class="sup-form" method="get">
+            <p class="sup-form-hint">
+              Required fields are marked by the browser before the form can be
+              submitted.
+            </p>
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="material-title">Listing title</label
+                ><input
+                  id="material-title"
+                  name="title"
+                  placeholder="e.g. Used wooden pallets"
+                  required="required"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="material-category">Category</label
+                ><select id="material-category" name="category">
+                  <option>Reusable Wood</option>
+                  <option>Selected Plastics</option>
+                  <option>Textile Offcuts</option>
+                  <option>Packaging</option>
+                  <option>Surplus Supplies</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="material-quantity">Available quantity</label
+                ><input
+                  id="material-quantity"
+                  min="0"
+                  name="quantity"
+                  placeholder="e.g. 200"
+                  required="required"
+                  type="number"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="material-unit">Unit</label
+                ><select id="material-unit" name="unit">
+                  <option>kg</option>
+                  <option>pieces</option>
+                  <option>rolls</option>
+                  <option>boxes</option>
+                  <option>cubic metres</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="material-condition">Condition</label
+                ><select id="material-condition" name="condition">
+                  <option>New</option>
+                  <option>Used (Good)</option>
+                  <option>Mixed</option>
+                  <option>Refurbished</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="material-price">Asking price (৳)</label
+                ><input
+                  id="material-price"
+                  min="0"
+                  name="price"
+                  placeholder="Optional"
+                  type="number"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="material-price-type">Price type</label
+                ><select id="material-price-type" name="price_type">
+                  <option value="Fixed price">Fixed price</option>
+                  <option value="Negotiable">Negotiable</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="material-district">District / Location</label
+                ><input
+                  id="material-district"
+                  name="district"
+                  placeholder="e.g. Dhaka"
+                  required="required"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="material-photo">Material photo</label
+                ><input
+                  accept="image/*"
+                  id="material-photo"
+                  name="photo"
+                  type="file"
+                />
+              </div>
+              <div class="sup-field span-2">
+                <label for="material-description">Description</label
+                ><textarea
+                  id="material-description"
+                  name="description"
+                  placeholder="Describe quality, size, availability and other relevant details."
+                  required="required"
+                ></textarea>
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">Save Draft</button
+              ><a class="sup-btn outline" href="#all-listings">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>

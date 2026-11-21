@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; Messages."
+      name="description"
+    />
+    <title>Messages | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a class="sup-nav-link" href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a class="sup-nav-link" href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a class="sup-nav-link" href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a class="sup-nav-link" href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a class="sup-nav-link" href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <div aria-disabled="true" aria-label="Logout" class="sup-logout-link">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path></svg
+            ><span>Logout</span>
+          </div>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>Messages</h1>
+            <p>Review buyer conversations and clarification requests.</p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <section class="sup-message-layout">
+          <div class="sup-conversation-list">
+            <a class="sup-conversation active" href="#conversation-abc"
+              ><span class="sup-avatar">AT</span
+              ><span
+                ><strong>ABC Traders</strong
+                ><small>Can you confirm bottle quantity?</small></span
+              ></a
+            ><a class="sup-conversation" href="#conversation-green"
+              ><span class="sup-avatar">GM</span
+              ><span
+                ><strong>Green Mart</strong
+                ><small>We can collect the pallets.</small></span
+              ></a
+            ><a class="sup-conversation" href="#conversation-textile"
+              ><span class="sup-avatar">TW</span
+              ><span
+                ><strong>Textile Works</strong
+                ><small>Please share material photos.</small></span
+              ></a
+            >
+          </div>
+          <div class="sup-chat-stack">
+            <div class="sup-chat-pane" id="conversation-abc">
+              <div class="sup-chat-head">
+                <strong>ABC Traders</strong>
+                <div class="sup-muted">
+                  Regarding: Used Plastic Bottles &middot; Request BR-2026-014
+                </div>
+              </div>
+              <div class="sup-chat-body">
+                <div class="sup-bubble">
+                  Hello, is the listed 500 kg quantity available for
+                  inspection?<span class="sup-chat-time"
+                    >Oct 29, 2026 &middot; 10:15 AM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  Yes, 500 kg is currently available. The bottles are clean and
+                  sorted.<span class="sup-chat-time"
+                    >Oct 29, 2026 &middot; 10:22 AM</span
+                  >
+                </div>
+                <div class="sup-bubble">
+                  Thank you. Can you confirm whether pickup from Dhaka is
+                  possible?<span class="sup-chat-time"
+                    >Oct 29, 2026 &middot; 10:28 AM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  Pickup from our Dhaka warehouse can be arranged by
+                  appointment.<span class="sup-chat-time"
+                    >Oct 29, 2026 &middot; 10:34 AM</span
+                  >
+                </div>
+              </div>
+              <form
+                action="#conversation-abc"
+                class="sup-chat-compose"
+                method="get"
+              >
+                <input
+                  aria-label="Write a message"
+                  name="message"
+                  placeholder="Write a message"
+                /><button class="sup-btn green" type="submit">
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <section class="sup-chat-pane" id="conversation-green">
+              <div class="sup-chat-head">
+                <strong>Green Mart</strong>
+                <div class="sup-muted">
+                  Regarding: Wooden Pallets &middot; Request BR-2026-015
+                </div>
+              </div>
+              <div class="sup-chat-body">
+                <div class="sup-bubble">
+                  We can collect the 100 wooden pallets from Chattogram.<span
+                    class="sup-chat-time"
+                    >Oct 28, 2026 &middot; 9:12 AM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  The pallets are stacked and ready for inspection.<span
+                    class="sup-chat-time"
+                    >Oct 28, 2026 &middot; 9:18 AM</span
+                  >
+                </div>
+                <div class="sup-bubble">
+                  Please confirm the pickup window and loading
+                  arrangements.<span class="sup-chat-time"
+                    >Oct 28, 2026 &middot; 9:25 AM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  Pickup can be arranged between 10:00 AM and 4:00 PM.<span
+                    class="sup-chat-time"
+                    >Oct 28, 2026 &middot; 9:31 AM</span
+                  >
+                </div>
+              </div>
+              <form
+                action="#conversation-green"
+                class="sup-chat-compose"
+                method="get"
+              >
+                <input
+                  aria-label="Write a message to Green Mart"
+                  name="message"
+                  placeholder="Write a message"
+                  type="text"
+                /><button class="sup-btn green" type="submit">
+                  Send Message
+                </button>
+              </form>
+            </section>
+            <section class="sup-chat-pane" id="conversation-textile">
+              <div class="sup-chat-head">
+                <strong>Textile Works</strong>
+                <div class="sup-muted">
+                  Regarding: Textile Offcuts &middot; Request BR-2026-016
+                </div>
+              </div>
+              <div class="sup-chat-body">
+                <div class="sup-bubble">
+                  Could you share additional photos of the textile offcuts?<span
+                    class="sup-chat-time"
+                    >Oct 27, 2026 &middot; 2:05 PM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  We have added the available photos and can arrange an
+                  inspection.<span class="sup-chat-time"
+                    >Oct 27, 2026 &middot; 2:14 PM</span
+                  >
+                </div>
+                <div class="sup-bubble">
+                  Please confirm that the material is dry and sorted.<span
+                    class="sup-chat-time"
+                    >Oct 27, 2026 &middot; 2:21 PM</span
+                  >
+                </div>
+                <div class="sup-bubble outgoing">
+                  The stock is stored indoors and separated by material
+                  type.<span class="sup-chat-time"
+                    >Oct 27, 2026 &middot; 2:29 PM</span
+                  >
+                </div>
+              </div>
+              <form
+                action="#conversation-textile"
+                class="sup-chat-compose"
+                method="get"
+              >
+                <input
+                  aria-label="Write a message to Textile Works"
+                  name="message"
+                  placeholder="Write a message"
+                  type="text"
+                /><button class="sup-btn green" type="submit">
+                  Send Message
+                </button>
+              </form>
+            </section>
+          </div>
+        </section>
+        <p class="sup-note">
+          Conversation history is displayed here. A connected messaging service
+          is required to send and receive live messages.
+        </p>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>

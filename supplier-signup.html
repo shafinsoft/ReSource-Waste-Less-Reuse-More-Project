@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create your supplier account on ReSource"
+    />
+
+    <title>Supplier Sign Up | ReSource</title>
+
+    <!-- Supplier Signup CSS -->
+    <link rel="stylesheet" href="assets/css/supplier-signup.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Supplier Signup JavaScript -->
+    <script src="assets/js/supplier-signup.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/1.png" alt="ReSource Logo" />
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Browse Materials</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="supplier-login.html" class="btn btn-outline-green"> Login </a>
+
+        <a href="supplier-signup.html" class="btn btn-solid-green"> Sign Up </a>
+      </div>
+    </header>
+
+    <!-- Main Signup Section -->
+    <main class="signup-hero">
+      <!-- Left Content -->
+      <section class="intro-panel">
+        <p class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          A smarter way to reuse
+        </p>
+
+        <h1>
+          Become a<br />
+          Supplier<br />
+          with <span>ReSource</span>
+        </h1>
+
+        <p class="intro-copy">
+          List your surplus materials and connect with buyers who need them.
+          Help build a cleaner and more sustainable future.
+        </p>
+
+        <!-- Features -->
+        <div class="features">
+          <article class="feature-item">
+            <div class="feature-icon">
+              <i data-lucide="cloud-upload"></i>
+            </div>
+
+            <div>
+              <h3>List reusable materials</h3>
+              <p>Show what you have to offer.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">
+              <i data-lucide="users-round"></i>
+            </div>
+
+            <div>
+              <h3>Reach trusted buyers</h3>
+              <p>Get more value from your surplus.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">
+              <i data-lucide="handshake"></i>
+            </div>
+
+            <div>
+              <h3>Easy and secure transactions</h3>
+              <p>Manage orders and quotations.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">
+              <i data-lucide="leaf"></i>
+            </div>
+
+            <div>
+              <h3>Support a greener environment</h3>
+              <p>Reduce waste and promote reuse.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Right Signup Form -->
+      <section class="form-side">
+        <form class="signup-card" id="supplierSignupForm">
+          <div class="form-heading">
+            <h2>Supplier Sign Up</h2>
+            <p>Create your supplier account</p>
+          </div>
+
+          <!-- Business Name -->
+          <div class="input-row">
+            <i data-lucide="building-2"></i>
+
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="Business Name"
+              autocomplete="organization"
+              required
+            />
+          </div>
+
+          <!-- Owner Name -->
+          <div class="input-row">
+            <i data-lucide="user-round"></i>
+
+            <input
+              type="text"
+              id="ownerName"
+              name="ownerName"
+              placeholder="Owner Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="input-row">
+            <i data-lucide="mail"></i>
+
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              placeholder="Email Address"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+          <div class="input-row">
+            <i data-lucide="phone"></i>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="input-row">
+            <i data-lucide="lock-keyhole"></i>
+
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              placeholder="Password (minimum 8 characters)"
+              minlength="8"
+              autocomplete="new-password"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              data-password-target="signupPassword"
+              aria-label="Show password"
+            >
+              <i data-lucide="eye"></i>
+            </button>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="input-row">
+            <i data-lucide="lock-keyhole"></i>
+
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              minlength="8"
+              autocomplete="new-password"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              data-password-target="confirmPassword"
+              aria-label="Show password"
+            >
+              <i data-lucide="eye"></i>
+            </button>
+          </div>
+
+          <!-- Terms -->
+          <label class="terms-row">
+            <input type="checkbox" id="agreeTerms" required />
+
+            <span>
+              I agree to the
+              <a href="#terms" id="termsLink"> Terms &amp; Conditions </a>
+            </span>
+          </label>
+
+          <!-- Form Messages -->
+          <p
+            class="form-message"
+            id="signupMessage"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+          <!-- Submit -->
+          <button type="submit" class="create-button">
+            <i data-lucide="user-round-plus"></i>
+            <span>Create Supplier Account</span>
+          </button>
+
+          <!-- Divider -->
+          <div class="divider">
+            <span></span>
+            <strong>OR</strong>
+            <span></span>
+          </div>
+
+          <!-- Login Link -->
+          <p class="login-prompt">
+            Already have an account?
+            <a href="supplier-login.html">Login</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>
+        © <span id="currentYear">2026</span>
+        ReSource. Waste Less, Reuse More.
+      </p>
+    </footer>
+
+    <!-- Render Icons -->
+    <script>
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>

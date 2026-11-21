@@ -1,0 +1,512 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource buyer marketplace — reusable and surplus materials."
+      name="description"
+    />
+    <title>Home &amp; Material Browse | ReSource Buyer</title>
+    <link href="../../assets/css/buyer-pages.css" rel="stylesheet" />
+    <link href="../../assets/css/design-system.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/buyer-dashboard.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="buyer-topbar">
+      <a
+        aria-label="ReSource Buyer Dashboard"
+        class="buyer-brand"
+        href="../../buyer-dashboard.html"
+        ><img
+          alt="ReSource"
+          class="brand-logo"
+          src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="topbar-right">
+        <a aria-label="Notifications" class="bell" href="messages.html"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg></a
+        ><a
+          aria-label="Open buyer profile"
+          class="account"
+          href="profile-settings.html"
+          ><span class="avatar">MM</span
+          ><span class="account-copy"
+            ><strong>Mehbub Mostaque</strong><small>Buyer</small></span
+          ><span class="down">⌄</span></a
+        >
+      </div>
+    </header>
+    <div class="buyer-layout">
+      <aside aria-label="Buyer navigation" class="buyer-sidebar">
+        <nav aria-label="Buyer pages" class="buyer-side-nav">
+          <a class="side-link" href="../../buyer-dashboard.html"
+            ><span class="nav-icon">⌂</span><span>Dashboard</span></a
+          ><a
+            aria-current="page"
+            class="side-link active"
+            href="browse-materials.html"
+            ><span class="nav-icon">⌕</span><span>Search Materials</span></a
+          ><a class="side-link" href="my-requests.html"
+            ><span class="nav-icon">▤</span><span>My Requests</span></a
+          ><a class="side-link" href="matching-quotations.html"
+            ><span class="nav-icon">▣</span><span>Received Quotations</span></a
+          ><a class="side-link" href="my-orders.html"
+            ><span class="nav-icon">🛒</span><span>My Orders</span></a
+          ><a class="side-link" href="messages.html"
+            ><span class="nav-icon">✉</span><span>Messages</span></a
+          ><a class="side-link" href="profile-settings.html#reviews"
+            ><span class="nav-icon">★</span><span>Reviews</span></a
+          ><a class="side-link" href="profile-settings.html"
+            ><span class="nav-icon">♙</span><span>Profile Settings</span></a
+          >
+        </nav>
+        <a class="side-link logout" href="../../buyer-login.html"
+          ><span class="nav-icon">⇥</span><span>Logout</span></a
+        >
+      </aside>
+      <main class="buyer-main" id="main">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">Buyer / Resource Seeker</p>
+            <h1>Home &amp; Material Browse</h1>
+            <p>
+              Find reusable materials from suppliers across participating
+              districts.
+            </p>
+          </div>
+        </div>
+        <form
+          action="browse-materials.html"
+          class="card browse-search"
+          method="get"
+        >
+          <label class="search-input"
+            ><span class="search-icon">⌕</span
+            ><input
+              aria-label="Search material keywords"
+              name="q"
+              placeholder="Search materials (e.g. plastic, wood, metal, fabric...)"
+              type="search" /></label
+          ><select aria-label="Choose category" name="category">
+            <option>All Categories</option>
+            <option>Plastic Materials</option>
+            <option>Textile Offcuts</option>
+            <option>Reusable Wood</option>
+            <option>Packaging</option>
+            <option>Selected Plastics</option>
+            <option>Surplus Supplies</option></select
+          ><button class="btn" type="submit">Search</button>
+        </form>
+        <section class="card panel section-gap">
+          <div class="panel-title">
+            <h2>Material Categories</h2>
+            <a class="text-link" href="#available-listings">View All</a>
+          </div>
+          <div class="category-grid">
+            <a class="category-tile" href="#available-listings"
+              ><img
+                alt="Plastic bottles"
+                src="../../assets/images/materials/plastic-bottles.jpg"
+              /><strong>Plastic Materials</strong></a
+            ><a class="category-tile" href="#available-listings"
+              ><img
+                alt="Textile offcuts"
+                src="../../assets/images/materials/textile-offcuts.jpg"
+              /><strong>Textile Offcuts</strong></a
+            ><a class="category-tile" href="#available-listings"
+              ><img
+                alt="Reusable wooden pallets"
+                src="../../assets/images/materials/wooden-pallets.jpg"
+              /><strong>Reusable Wood</strong></a
+            ><a class="category-tile" href="#available-listings"
+              ><img
+                alt="Cardboard packaging"
+                src="../../assets/images/materials/packaging-boxes.jpg"
+              /><strong>Packaging</strong></a
+            ><a class="category-tile" href="#available-listings"
+              ><img
+                alt="Reusable plastic crates and containers"
+                src="../../assets/images/materials/selected-plastics.jpg"
+              /><strong>Selected Plastics</strong></a
+            ><a class="category-tile" href="#available-listings"
+              ><img
+                alt="Mixed surplus supplies"
+                src="../../assets/images/materials/surplus-supplies.jpg"
+              /><strong>Surplus Supplies</strong></a
+            >
+          </div>
+        </section>
+        <div class="browse-layout section-gap">
+          <aside class="card filters">
+            <div class="panel-title">
+              <h2>Filters</h2>
+              <a class="text-link" href="browse-materials.html">Clear All</a>
+            </div>
+            <form
+              action="browse-materials.html"
+              class="filter-stack"
+              method="get"
+            >
+              <div class="field">
+                <label for="district">District</label
+                ><select id="district" name="district">
+                  <option>All Districts</option>
+                  <option>Dhaka</option>
+                  <option>Gazipur</option>
+                  <option>Chattogram</option>
+                  <option>Rajshahi</option>
+                  <option>Narayanganj</option>
+                  <option>Sylhet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Quantity Range (kg/pcs)</label>
+                <div class="range">
+                  <input
+                    aria-label="Minimum quantity"
+                    min="0"
+                    placeholder="Min"
+                    type="number"
+                  /><input
+                    aria-label="Maximum quantity"
+                    min="0"
+                    placeholder="Max"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="condition">Condition</label
+                ><select id="condition">
+                  <option>All Conditions</option>
+                  <option>New</option>
+                  <option>Good / Usable</option>
+                  <option>Refurbished</option>
+                  <option>Mixed</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Price Range (৳)</label>
+                <div class="range">
+                  <input
+                    aria-label="Minimum price"
+                    min="0"
+                    placeholder="Min"
+                    type="number"
+                  /><input
+                    aria-label="Maximum price"
+                    min="0"
+                    placeholder="Max"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="availability">Listing Availability</label
+                ><select id="availability">
+                  <option>All Listings</option>
+                  <option>Available now</option>
+                  <option>Limited stock</option>
+                </select>
+              </div>
+              <label class="checkbox-line"
+                ><input type="checkbox" /> Available now only</label
+              ><button class="btn" type="submit">Apply Filters</button>
+              <p class="empty-note">
+                Filter controls are shown as a frontend demo. Results use sample
+                listings.
+              </p>
+            </form>
+          </aside>
+          <section id="available-listings">
+            <div class="listing-header">
+              <h2>Available Materials <span class="muted">(24)</span></h2>
+              <select aria-label="Sort listings">
+                <option>Sort: Best Match</option>
+                <option>Newest</option>
+                <option>Price: Low to High</option>
+                <option>Quantity: High to Low</option>
+              </select>
+            </div>
+            <div class="results-grid">
+              <article class="material-card card">
+                <img
+                  alt="Used Plastic Bottles"
+                  class="material-photo"
+                  src="../../assets/images/materials/plastic-bottles.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Used Plastic Bottles</h3>
+                    <span class="status good">Available</span>
+                  </div>
+                  <div class="price">৳ 50/kg</div>
+                  <div class="material-meta">
+                    <span>▦ 500 kg</span><span>⌖ Dhaka</span><span>✓ Good</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">AT</span
+                    ><span
+                      ><strong>ABC Traders</strong
+                      ><small>Verified supplier</small></span
+                    ><span class="rating">★ 4.8</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-plastic-bottles.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-plastic-bottles.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="material-card card">
+                <img
+                  alt="Wooden Pallets"
+                  class="material-photo"
+                  src="../../assets/images/materials/wooden-pallets.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Wooden Pallets</h3>
+                    <span class="status good">Available</span>
+                  </div>
+                  <div class="price">৳ 300/pc</div>
+                  <div class="material-meta">
+                    <span>▦ 100 pieces</span><span>⌖ Chattogram</span
+                    ><span>✓ Used (Good)</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">GF</span
+                    ><span
+                      ><strong>Green Factory</strong
+                      ><small>Verified supplier</small></span
+                    ><span class="rating">★ 4.7</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-wooden-pallets.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-wooden-pallets.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="material-card card">
+                <img
+                  alt="Textile Offcuts"
+                  class="material-photo"
+                  src="../../assets/images/materials/textile-offcuts.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Textile Offcuts</h3>
+                    <span class="status good">Available</span>
+                  </div>
+                  <div class="price">৳ 40/kg</div>
+                  <div class="material-meta">
+                    <span>▦ 300 kg</span><span>⌖ Gazipur</span
+                    ><span>✓ Mixed</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">TH</span
+                    ><span
+                      ><strong>Textile Hub</strong
+                      ><small>Verified supplier</small></span
+                    ><span class="rating">★ 4.8</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-textile-offcuts.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-textile-offcuts.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="material-card card">
+                <img
+                  alt="Cardboard Boxes"
+                  class="material-photo"
+                  src="../../assets/images/materials/packaging-boxes.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Cardboard Boxes</h3>
+                    <span class="status good">Available</span>
+                  </div>
+                  <div class="price">৳ 10/pc</div>
+                  <div class="material-meta">
+                    <span>▦ 200 pcs</span><span>⌖ Rajshahi</span
+                    ><span>✓ Good</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">RM</span
+                    ><span
+                      ><strong>Recycle Mart</strong
+                      ><small>Verified supplier</small></span
+                    ><span class="rating">★ 4.5</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-cardboard-boxes.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-cardboard-boxes.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="material-card card">
+                <img
+                  alt="Mixed Surplus Supplies"
+                  class="material-photo"
+                  src="../../assets/images/materials/surplus-supplies.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Mixed Surplus Supplies</h3>
+                    <span class="status good">Limited Stock</span>
+                  </div>
+                  <div class="price">৳ 120/kg</div>
+                  <div class="material-meta">
+                    <span>▦ 250 kg</span><span>⌖ Narayanganj</span
+                    ><span>✓ Mixed</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">P</span
+                    ><span
+                      ><strong>PolySource</strong
+                      ><small>Verified supplier</small></span
+                    ><span class="rating">★ 4.8</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-surplus-supplies.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-surplus-supplies.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="material-card card">
+                <img
+                  alt="Reusable plastic crates and containers"
+                  class="material-photo"
+                  src="../../assets/images/materials/selected-plastics.jpg"
+                />
+                <div class="material-body">
+                  <div
+                    class="material-card-heading"
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 8px;
+                      align-items: start;
+                    "
+                  >
+                    <h3>Reusable Plastic Crates</h3>
+                    <span class="status good">Available</span>
+                  </div>
+                  <div class="price">৳ 65/kg</div>
+                  <div class="material-meta">
+                    <span>▦ 400 kg</span><span>⌖ Narayanganj</span
+                    ><span>✓ Good</span>
+                  </div>
+                  <div class="supplier-row">
+                    <span class="supplier-avatar">GP</span
+                    ><span
+                      ><strong>GreenCycle Plastics</strong
+                      ><small>Reusable crates and containers</small></span
+                    ><span class="rating">★ 4.6</span>
+                  </div>
+                  <div class="actions-row">
+                    <a class="btn small" href="details-plastic-crates.html"
+                      >View Details</a
+                    ><a
+                      class="btn small outline"
+                      href="matching-plastic-crates.html"
+                      >Compare</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <section class="card panel section-gap">
+              <div class="panel-title">
+                <h2>Suggested for You</h2>
+                <span class="pill"
+                  >Based on category, quantity &amp; location</span
+                >
+              </div>
+              <p class="muted" style="margin: 0; font-size: 12px">
+                Suggestions are ranked using material category, quantity fit,
+                condition and location where sample information is available.
+              </p>
+              <div class="actions-row">
+                <a class="btn green" href="matching-quotations.html"
+                  >View Matching Results</a
+                ><a class="btn outline" href="material-details-request.html"
+                  >Post a Material Wanted Request</a
+                >
+              </div>
+            </section>
+          </section>
+        </div>
+        <p class="footer-note">
+          ReSource · Make surplus useful again · Demo data for academic project
+        </p>
+      </main>
+    </div>
+    <script src="../../assets/js/buyer-page.js"></script>
+  </body>
+</html>

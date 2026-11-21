@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ReSource buyer marketplace — reusable and surplus materials."
+    />
+    <title>Profile, Reviews & Preferences | ReSource Buyer</title>
+    <link rel="stylesheet" href="../../assets/css/buyer-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="buyer-topbar">
+      <a
+        class="buyer-brand"
+        href="../../buyer-dashboard.html"
+        aria-label="ReSource Buyer Dashboard"
+        ><img
+          class="brand-logo"
+          src="../../assets/images/logo/resource-logo.svg"
+          alt="ReSource"
+      /></a>
+      <div class="topbar-right">
+        <a class="bell" href="messages.html" aria-label="Notifications"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9" />
+            <path d="M10 21h4" /></svg></a
+        ><a
+          class="account"
+          href="profile-settings.html"
+          aria-label="Open buyer profile"
+          ><span class="avatar">MM</span
+          ><span class="account-copy"
+            ><strong>Mehbub Mostaque</strong><small>Buyer</small></span
+          ><span class="down">⌄</span></a
+        >
+      </div>
+    </header>
+    <div class="buyer-layout">
+      <aside class="buyer-sidebar" aria-label="Buyer navigation">
+        <nav class="buyer-side-nav" aria-label="Buyer pages">
+          <a class="side-link" href="../../buyer-dashboard.html"
+            ><span class="nav-icon">⌂</span><span>Dashboard</span></a
+          ><a class="side-link" href="browse-materials.html"
+            ><span class="nav-icon">⌕</span><span>Search Materials</span></a
+          ><a class="side-link" href="my-requests.html"
+            ><span class="nav-icon">▤</span><span>My Requests</span></a
+          ><a class="side-link" href="matching-quotations.html"
+            ><span class="nav-icon">▣</span><span>Received Quotations</span></a
+          ><a class="side-link" href="my-orders.html"
+            ><span class="nav-icon">🛒</span><span>My Orders</span></a
+          ><a class="side-link" href="messages.html"
+            ><span class="nav-icon">✉</span><span>Messages</span></a
+          ><a class="side-link" href="profile-settings.html#reviews"
+            ><span class="nav-icon">★</span><span>Reviews</span></a
+          ><a
+            class="side-link active"
+          
+            href="profile-settings.html"
+            ><span class="nav-icon">♙</span><span>Profile Settings</span></a
+          >
+        </nav>
+        <a class="side-link logout" href="../../buyer-login.html"
+          ><span class="nav-icon">⇥</span><span>Logout</span></a
+        >
+      </aside>
+      <main class="buyer-main" id="main">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">Buyer / Resource Seeker</p>
+            <h1>Profile, Reviews & Preferences</h1>
+            <p>
+              Manage your buyer account, notifications, completed-exchange
+              reviews and reports.
+            </p>
+          </div>
+        </div>
+        <nav class="settings-tabs" aria-label="Profile settings sections">
+          <a class="active" href="#personal-info">Profile Information</a
+          ><a href="#password">Change Password</a
+          ><a href="#preferences">Notification Preferences</a
+          ><a href="#reviews">My Reviews</a
+          ><a href="#reports">Reported Items</a>
+        </nav>
+        <div class="profile-grid">
+          <section class="card panel" id="personal-info">
+            <div class="profile-summary">
+              <div class="profile-photo">MM</div>
+              <div>
+                <h2>Mehbub Mostaque</h2>
+                <p>Buyer account · Member since Jan 2024</p>
+                <span class="status good">Active Account</span>
+              </div>
+            </div>
+            <form action="profile-settings.html" method="get" class="form-grid">
+              <div class="field">
+                <label for="fullname">Full Name *</label
+                ><input id="fullname" value="Mehbub Mostaque" required />
+              </div>
+              <div class="field">
+                <label for="email">Email Address *</label
+                ><input
+                  type="email"
+                  id="email"
+                  value="mehbub@example.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number *</label
+                ><input type="tel" id="phone" value="01712345678" required />
+              </div>
+              <div class="field">
+                <label for="organisation"
+                  >Organization / Company (Optional)</label
+                ><input id="organisation" value="ABC Manufacturing Ltd." />
+              </div>
+              <div class="field">
+                <label for="district">District *</label
+                ><select id="district">
+                  <option>Dhaka</option>
+                  <option>Chattogram</option>
+                  <option>Gazipur</option>
+                  <option>Rajshahi</option>
+                  <option>Narayanganj</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="address">Address</label
+                ><input id="address" value="Uttara, Dhaka" />
+              </div>
+              <div class="span-2">
+                <button class="btn green" type="submit">
+                  Preview Profile Update
+                </button>
+              </div>
+            </form>
+          </section>
+          <aside class="card panel">
+            <h2 class="subhead">Account Summary</h2>
+            <div class="detail-list">
+              <div><small>Member Since</small><strong>Jan 2024</strong></div>
+              <div><small>Total Requests</small><strong>6</strong></div>
+              <div><small>Completed Orders</small><strong>5</strong></div>
+              <div><small>Reviews Given</small><strong>4</strong></div>
+              <div>
+                <small>Account Status</small
+                ><strong style="color: #07864b">Active</strong>
+              </div>
+              <div><small>Preferred District</small><strong>Dhaka</strong></div>
+            </div>
+            <a
+              class="btn outline"
+              href="../../buyer-login.html"
+              style="width: 100%; margin-top: 8px"
+              >Log Out</a
+            >
+          </aside>
+        </div>
+        <section class="card panel section-gap" id="password">
+          <div class="panel-title">
+            <h2>Change Password</h2>
+            <span class="muted" style="font-size: 12px"
+              >Secure account access</span
+            >
+          </div>
+          <form action="profile-settings.html" method="post" class="form-grid">
+            <div class="field">
+              <label for="current-pass">Current Password</label
+              ><input
+                id="current-pass"
+                type="password"
+                placeholder="Current password"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="new-pass">New Password</label
+              ><input
+                id="new-pass"
+                type="password"
+                placeholder="At least 8 characters"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="confirm-pass">Confirm New Password</label
+              ><input
+                id="confirm-pass"
+                type="password"
+                placeholder="Re-enter new password"
+                required
+              />
+            </div>
+            <div class="field" style="justify-content: end">
+              <button class="btn" type="submit">Preview Password Change</button>
+            </div>
+          </form>
+          <p class="empty-note">
+            This form does not change any real password until connected to
+            secure backend authentication.
+          </p>
+        </section>
+        <section class="card panel section-gap" id="preferences">
+          <div class="panel-title">
+            <h2>Notification Preferences</h2>
+            <span class="pill">Your preferences</span>
+          </div>
+          <form action="profile-settings.html" method="get">
+            <div style="display: grid; gap: 12px">
+              <label class="checkbox-line"
+                ><input type="checkbox" checked /> Email notifications for new
+                quotations</label
+              ><label class="checkbox-line"
+                ><input type="checkbox" checked /> Order status updates</label
+              ><label class="checkbox-line"
+                ><input type="checkbox" /> Promotional offers and suggested
+                listings</label
+              ><label class="checkbox-line"
+                ><input type="checkbox" checked /> System announcements and
+                account notices</label
+              >
+            </div>
+            <button class="btn green section-gap" type="submit">
+              Preview Preference Update
+            </button>
+          </form>
+        </section>
+        <section class="card panel section-gap" id="reviews">
+          <div class="panel-title">
+            <h2>My Reviews</h2>
+            <span class="muted" style="font-size: 12px"
+              >Only completed exchanges are eligible</span
+            >
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Material</th>
+                  <th>Supplier</th>
+                  <th>Rating</th>
+                  <th>Review</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Wooden Pallets</td>
+                  <td>Green Factory</td>
+                  <td><span class="stars">★★★★★</span></td>
+                  <td>Good quality pallets. Delivered on time.</td>
+                  <td>Nov 2026</td>
+                  <td><a class="text-link" href="#write-review">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>Plastic Bottles</td>
+                  <td>ABC Traders</td>
+                  <td><span class="stars">★★★★☆</span></td>
+                  <td>Nice stock and quick response.</td>
+                  <td>Oct 2026</td>
+                  <td><a class="text-link" href="#write-review">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>Textile Offcuts</td>
+                  <td>Textile Hub</td>
+                  <td><span class="stars">★★★★★</span></td>
+                  <td>Accurate description and helpful supplier.</td>
+                  <td>Sep 2026</td>
+                  <td><a class="text-link" href="#write-review">Edit</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card panel section-gap" id="write-review">
+          <div class="panel-title">
+            <h2>Write a Review</h2>
+            <span class="pill">Completed order only</span>
+          </div>
+          <form
+            action="profile-settings.html#reviews"
+            method="get"
+            class="form-grid"
+          >
+            <div class="field">
+              <label for="review-order">Completed Exchange</label
+              ><select id="review-order">
+                <option>#ORD-2026-0038 — Used Plastic Bottles</option>
+                <option>#ORD-2026-0024 — Cardboard Boxes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Rating</label>
+              <div class="stars" style="font-size: 23px">
+                <label
+                  ><input
+                    type="radio"
+                    name="rating"
+                    value="1"
+                    aria-label="1 star"
+                  />★</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="rating"
+                    value="2"
+                    aria-label="2 stars"
+                  />★</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="rating"
+                    value="3"
+                    aria-label="3 stars"
+                  />★</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="rating"
+                    value="4"
+                    aria-label="4 stars"
+                    checked
+                  />★</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="rating"
+                    value="5"
+                    aria-label="5 stars"
+                  />★</label
+                >
+              </div>
+            </div>
+            <div class="field span-2">
+              <label for="review-title">Review Title</label
+              ><input
+                id="review-title"
+                placeholder="e.g. Good quality material"
+              />
+            </div>
+            <div class="field span-2">
+              <label for="review-text">Written Review</label
+              ><textarea
+                id="review-text"
+                placeholder="Describe the material quality, supplier communication and exchange experience..."
+              ></textarea>
+            </div>
+            <div class="span-2">
+              <button class="btn green" type="submit">Preview Review</button>
+            </div>
+          </form>
+        </section>
+        <section class="card panel section-gap" id="reports">
+          <div class="panel-title">
+            <h2>Report a Listing or User</h2>
+            <span class="status issue">Safety & accuracy</span>
+          </div>
+          <p class="muted" style="font-size: 12px">
+            Report suspicious listings, inaccurate material descriptions or
+            inappropriate conduct so the platform admin can review the case.
+          </p>
+          <form
+            action="profile-settings.html#reports"
+            method="get"
+            class="form-grid"
+          >
+            <div class="field">
+              <label for="report-item">Listing / User / Order</label
+              ><input
+                id="report-item"
+                placeholder="Listing ID, supplier name or order ref"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="report-reason">Report Category</label
+              ><select id="report-reason">
+                <option>Inaccurate material description</option>
+                <option>Suspicious listing</option>
+                <option>Inappropriate conduct</option>
+                <option>Transaction issue</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field span-2">
+              <label for="report-details">Details</label
+              ><textarea
+                id="report-details"
+                placeholder="Explain what happened and include relevant information..."
+              ></textarea>
+            </div>
+            <div class="span-2">
+              <button class="btn danger" type="submit">Preview Report</button>
+            </div>
+          </form>
+          <p class="empty-note section-gap">
+            Submitted reports are not transmitted in this static page. Live
+            reporting needs a backend/admin workflow.
+          </p>
+        </section>
+        <p class="footer-note">
+          ReSource · Make surplus useful again · Demo data for academic project
+        </p>
+      </main>
+    </div>
+    <script src="../../assets/js/buyer-page.js"></script>
+
+  </body>
+</html>

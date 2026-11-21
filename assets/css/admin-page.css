@@ -1,0 +1,33 @@
+/* Shared styles for secondary Admin pages */
+.admin-page .admin-content > .admin-panel {
+  margin-top: 4px;
+}
+.admin-page .admin-toolbar {
+  margin-top: 14px;
+}
+.admin-page .admin-table tbody tr:hover {
+  background: #f8fbff;
+}
+.admin-page .admin-table td:first-child {
+  font-weight: 600;
+}
+.admin-page .admin-form-grid {
+  margin: 18px 0;
+}
+.admin-page .admin-form-field label {
+  display: block;
+}
+.admin-page .admin-panel .admin-footer-note {
+  line-height: 1.6;
+}
+.admin-page .admin-table-wrap {
+  border: 1px solid #e8edf3;
+  border-radius: 8px;
+}
+.admin-page .admin-table th:first-child,
+.admin-page .admin-table td:first-child {
+  padding-left: 16px;
+}
+.admin-page .admin-table tbody tr:last-child td {
+  border-bottom: 0;
+}

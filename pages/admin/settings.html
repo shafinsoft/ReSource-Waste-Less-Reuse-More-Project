@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings | ReSource Admin</title>
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-page.css" />
+    <script src="../../assets/js/admin-dashboard.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <div class="admin-layout" id="adminLayout">
+      <aside class="admin-sidebar">
+        <a class="admin-brand" href="../../admin-dashboard.html"
+          ><img src="../../assets/images/logo/1.png" alt="ReSource"
+        /></a>
+        <nav class="admin-navigation" aria-label="Admin navigation">
+          <a class="admin-nav-link" href="../../admin-dashboard.html"
+            ><span class="nav-icon">⌂</span>Dashboard</a
+          ><a class="admin-nav-link" href="user-management.html"
+            ><span class="nav-icon">♟</span>User Management</a
+          ><a class="admin-nav-link" href="listings-management.html"
+            ><span class="nav-icon">▣</span>Listings Management</a
+          ><a class="admin-nav-link" href="material-categories.html"
+            ><span class="nav-icon">◉</span>Material Categories</a
+          ><a class="admin-nav-link" href="reports-issues.html"
+            ><span class="nav-icon">▤</span>Reports & Issues</a
+          ><a class="admin-nav-link" href="exchanges.html"
+            ><span class="nav-icon">⇄</span>Exchanges</a
+          ><a class="admin-nav-link" href="analytics.html"
+            ><span class="nav-icon">▥</span>Analytics</a
+          ><a class="admin-nav-link active" href="settings.html"
+            ><span class="nav-icon">⚙</span>Settings</a
+          >
+        </nav>
+        <div class="admin-sidebar-footer">
+          <a href="#" class="admin-logout-link" data-logout
+            ><span class="nav-icon">⇥</span>Logout</a
+          >
+        </div>
+      </aside>
+      <div class="admin-main">
+        <header class="admin-header">
+          <button
+            class="admin-menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle sidebar"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <div class="admin-header-right">
+            <div class="admin-profile-wrap">
+              <button
+                class="admin-profile"
+                id="profileToggle"
+                aria-expanded="false"
+              >
+                <span class="admin-avatar">A</span
+                ><span class="admin-profile-text"
+                  ><strong>Admin</strong
+                  ><small>Platform Administrator</small></span
+                ><span class="profile-chevron">⌄</span>
+              </button>
+              <div class="admin-profile-dropdown" id="profileDropdown" hidden>
+                <a href="settings.html">Settings</a
+                ><button type="button" data-logout>Logout</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="admin-content">
+          <div class="admin-page-heading">
+            <h1>Settings</h1>
+            <p>Maintain basic listing rules and platform preferences</p>
+          </div>
+          <section class="admin-panel">
+            <div class="panel-heading"><h2>Platform Settings</h2></div>
+            <form id="settingsForm">
+              <div class="admin-form-grid">
+                <div class="admin-form-field">
+                  <label for="platformName">Platform name</label
+                  ><input
+                    class="admin-input"
+                    id="platformName"
+                    value="ReSource"
+                  />
+                </div>
+                <div class="admin-form-field">
+                  <label for="defaultUnit">Default measurement unit</label
+                  ><select class="admin-select" id="defaultUnit">
+                    <option>kg</option>
+                    <option>tonne</option>
+                    <option>piece</option>
+                    <option>litre</option>
+                  </select>
+                </div>
+                <div class="admin-form-field">
+                  <label for="reviewRequired">Listing moderation</label
+                  ><select class="admin-select" id="reviewRequired">
+                    <option>Require review before publishing</option>
+                    <option>Allow automatic publishing</option>
+                  </select>
+                </div>
+                <div class="admin-form-field">
+                  <label for="reportRetention"
+                    >Administrative log retention</label
+                  ><select class="admin-select" id="reportRetention">
+                    <option>12 months</option>
+                    <option>24 months</option>
+                    <option>36 months</option>
+                  </select>
+                </div>
+                <div class="admin-form-field full">
+                  <label for="moderationGuidance">Moderation guidance</label
+                  ><textarea
+                    class="admin-textarea"
+                    id="moderationGuidance"
+                    rows="4"
+                  >
+Check category, quantity, condition, location and photos. Record a reason for each moderation decision.</textarea
+                  >
+                </div>
+              </div>
+              <p class="admin-footer-note">
+                Demo form only. Connect settings to a protected backend before
+                saving real platform settings.
+              </p>
+              <button class="admin-button" type="submit">
+                Save Settings (Demo)
+              </button>
+            </form>
+          </section>
+          <footer class="admin-footer">
+            ReSource Platform Administration · Demo data
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script src="../../assets/js/admin-dashboard.js" defer></script>
+    <script src="../../assets/js/admin-page.js" defer></script>
+  </body>
+</html>

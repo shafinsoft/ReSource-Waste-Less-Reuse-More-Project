@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ReSource platform administration dashboard"
+    />
+    <title>Admin Dashboard | ReSource</title>
+    <link rel="stylesheet" href="assets/css/design-system.css" />
+    <link rel="stylesheet" href="assets/css/admin-dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="assets/js/admin-dashboard.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <div class="admin-layout" id="adminLayout">
+      <aside class="admin-sidebar" id="adminSidebar">
+        <a class="admin-brand" href="admin-dashboard.html"
+          ><img src="assets/images/logo/1.png" alt="ReSource"
+        /></a>
+        <nav class="admin-navigation" aria-label="Admin navigation">
+          <a class="admin-nav-link active" href="admin-dashboard.html"
+            ><span class="nav-icon">⌂</span>Dashboard</a
+          >
+          <a class="admin-nav-link" href="pages/admin/user-management.html"
+            ><span class="nav-icon">♟</span>User Management</a
+          >
+          <a class="admin-nav-link" href="pages/admin/listings-management.html"
+            ><span class="nav-icon">▣</span>Listings Management</a
+          >
+          <a class="admin-nav-link" href="pages/admin/material-categories.html"
+            ><span class="nav-icon">◉</span>Material Categories</a
+          >
+          <a class="admin-nav-link" href="pages/admin/reports-issues.html"
+            ><span class="nav-icon">▤</span>Reports &amp; Issues</a
+          >
+          <a class="admin-nav-link" href="pages/admin/exchanges.html"
+            ><span class="nav-icon">⇄</span>Exchanges</a
+          >
+          <a class="admin-nav-link" href="pages/admin/analytics.html"
+            ><span class="nav-icon">▥</span>Analytics</a
+          >
+          <a class="admin-nav-link" href="pages/admin/settings.html"
+            ><span class="nav-icon">⚙</span>Settings</a
+          >
+        </nav>
+        <div class="admin-sidebar-footer">
+          <a href="admin-login.html" class="admin-logout-link"
+            ><span class="nav-icon">⇥</span>Logout</a
+          >
+        </div>
+      </aside>
+      <div class="admin-main">
+        <header class="admin-header">
+          <button
+            class="admin-menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle sidebar"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <div class="admin-header-right">
+            <button
+              class="admin-notification"
+              type="button"
+              aria-label="Notifications"
+            >
+              ♧<span class="notification-dot"></span>
+            </button>
+            <div class="admin-profile-wrap">
+              <button
+                class="admin-profile"
+                id="profileToggle"
+                aria-expanded="false"
+              >
+                <span class="admin-avatar">A</span
+                ><span class="admin-profile-text"
+                  ><strong>Admin</strong
+                  ><small>Platform Administrator</small></span
+                ><span class="profile-chevron">⌄</span>
+              </button>
+              <div class="admin-profile-dropdown" id="profileDropdown" hidden>
+                <a href="pages/admin/settings.html">Settings</a
+                ><button type="button" data-logout>Logout</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="admin-content">
+          <div class="admin-page-heading">
+            <h1>Admin Dashboard</h1>
+            <p>Monitor platform activity and manage content</p>
+          </div>
+          <section class="admin-stats-grid" aria-label="Platform overview">
+            <article class="admin-stat-card">
+              <div class="stat-icon stat-blue">♟</div>
+              <h2>245</h2>
+              <p>Total Users</p>
+              <div class="stat-footer">
+                <span class="stat-positive">↑ 12%</span
+                ><small>+26 this month</small>
+              </div>
+            </article>
+            <article class="admin-stat-card">
+              <div class="stat-icon stat-green">▤</div>
+              <h2>120</h2>
+              <p>Material Listings</p>
+              <div class="stat-footer">
+                <span class="stat-positive">↑ 8%</span
+                ><small>+9 this month</small>
+              </div>
+            </article>
+            <article class="admin-stat-card">
+              <div class="stat-icon stat-orange">◷</div>
+              <h2>35</h2>
+              <p>Pending Review</p>
+              <div class="stat-footer">
+                <span class="stat-negative">↓ 5%</span
+                ><small>-2 this month</small>
+              </div>
+            </article>
+            <article class="admin-stat-card">
+              <div class="stat-icon stat-purple">⇄</div>
+              <h2>28</h2>
+              <p>Active Exchanges</p>
+              <div class="stat-footer">
+                <span class="stat-positive">↑ 20%</span
+                ><small>+5 this month</small>
+              </div>
+            </article>
+          </section>
+          <section
+            class="admin-summary-grid"
+            aria-label="Additional platform metrics"
+          >
+            <article class="summary-card">
+              <span>Total Suppliers</span><strong>145</strong>
+            </article>
+            <article class="summary-card">
+              <span>Total Buyers</span><strong>100</strong>
+            </article>
+            <article class="summary-card">
+              <span>Open Requests</span><strong>42</strong>
+            </article>
+            <article class="summary-card">
+              <span>Completed Exchanges</span><strong>186</strong>
+            </article>
+            <article class="summary-card">
+              <span>Reported Accounts</span><strong>6</strong>
+            </article>
+            <article class="summary-card">
+              <span>Unresolved Reports</span><strong>12</strong>
+            </article>
+            <article class="summary-card">
+              <span>Open Disputes</span><strong>4</strong>
+            </article>
+          </section>
+          <section class="admin-charts-grid">
+            <article class="admin-panel">
+              <div class="panel-heading">
+                <h2>User Registrations (Last 7 Days)</h2>
+              </div>
+              <div class="registration-chart">
+                <canvas
+                  id="registrationChart"
+                  aria-label="User registrations line chart"
+                ></canvas>
+              </div>
+            </article>
+            <article class="admin-panel">
+              <div class="panel-heading"><h2>Listings by Category</h2></div>
+              <div class="category-chart-layout">
+                <div class="category-pie">
+                  <canvas
+                    id="categoryChart"
+                    aria-label="Listings by category pie chart"
+                  ></canvas>
+                </div>
+                <div class="category-legend">
+                  <div><i class="legend-plastic"></i>Plastic</div>
+                  <div><i class="legend-metal"></i>Metal</div>
+                  <div><i class="legend-wood"></i>Wood</div>
+                  <div><i class="legend-textile"></i>Textile</div>
+                  <div><i class="legend-paper"></i>Paper</div>
+                  <div><i class="legend-other"></i>Others</div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section class="admin-bottom-grid">
+            <article class="admin-panel">
+              <div class="panel-heading">
+                <h2>Recent Activities</h2>
+                <a class="view-all" href="pages/admin/analytics.html"
+                  >View All</a
+                >
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon activity-green">♟</div>
+                  <div class="activity-info">
+                    <strong>New supplier registered</strong
+                    ><span>Green Factory Ltd.</span>
+                  </div>
+                  <time>2 hours ago</time>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon activity-purple">▤</div>
+                  <div class="activity-info">
+                    <strong>New material listing submitted</strong
+                    ><span>Used Plastic Crates</span>
+                  </div>
+                  <time>3 hours ago</time>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon activity-red">!</div>
+                  <div class="activity-info">
+                    <strong>A buyer reported an issue</strong
+                    ><span>Listing #1023</span>
+                  </div>
+                  <time>5 hours ago</time>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon activity-green">✓</div>
+                  <div class="activity-info">
+                    <strong>Listing approved</strong><span>Wooden Pallets</span>
+                  </div>
+                  <time>6 hours ago</time>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon activity-purple">⇄</div>
+                  <div class="activity-info">
+                    <strong>Exchange completed</strong
+                    ><span>Plastic Bottles → Wood Pallets</span>
+                  </div>
+                  <time>8 hours ago</time>
+                </div>
+              </div>
+            </article>
+            <article class="admin-panel">
+              <div class="panel-heading">
+                <h2>Pending Listings Review</h2>
+                <a class="view-all" href="pages/admin/listings-management.html"
+                  >View All</a
+                >
+              </div>
+              <div class="pending-list">
+                <div class="pending-item">
+                  <div class="listing-thumb thumb-wood">▤</div>
+                  <div class="listing-info">
+                    <strong>Mixed Plastic Scrap</strong
+                    ><span>By ABC Traders</span>
+                  </div>
+                  <span class="category-badge badge-plastic">Plastic</span
+                  ><time>Dec 16, 2024</time
+                  ><a
+                    class="review-button"
+                    href="pages/admin/listings-management.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="pending-item">
+                  <div class="listing-thumb thumb-textile">▧</div>
+                  <div class="listing-info">
+                    <strong>Used Fabric Rolls</strong
+                    ><span>By Textile House</span>
+                  </div>
+                  <span class="category-badge badge-textile">Textile</span
+                  ><time>Dec 15, 2024</time
+                  ><a
+                    class="review-button"
+                    href="pages/admin/listings-management.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="pending-item">
+                  <div class="listing-thumb thumb-paper">▤</div>
+                  <div class="listing-info">
+                    <strong>Cardboard Boxes</strong><span>By Recycle Hub</span>
+                  </div>
+                  <span class="category-badge badge-paper">Paper</span
+                  ><time>Dec 15, 2024</time
+                  ><a
+                    class="review-button"
+                    href="pages/admin/listings-management.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="pending-item">
+                  <div class="listing-thumb thumb-wood">▦</div>
+                  <div class="listing-info">
+                    <strong>Wooden Pallets</strong><span>By Green Factory</span>
+                  </div>
+                  <span class="category-badge badge-wood">Wood</span
+                  ><time>Dec 14, 2024</time
+                  ><a
+                    class="review-button"
+                    href="pages/admin/listings-management.html"
+                    >Review</a
+                  >
+                </div>
+                <div class="pending-item">
+                  <div class="listing-thumb thumb-metal">▥</div>
+                  <div class="listing-info">
+                    <strong>Metal Scrap</strong><span>By Metal Solutions</span>
+                  </div>
+                  <span class="category-badge badge-metal">Metal</span
+                  ><time>Dec 14, 2024</time
+                  ><a
+                    class="review-button"
+                    href="pages/admin/listings-management.html"
+                    >Review</a
+                  >
+                </div>
+              </div>
+            </article>
+          </section>
+          <p class="admin-footer-note">
+            Demo data only. Connect the dashboard to your backend before using
+            it for live platform decisions.
+          </p>
+          <footer class="admin-footer">ReSource Platform Administration</footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

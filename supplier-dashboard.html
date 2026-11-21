@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Module &mdash; manage material listings, buyer requests, quotations and exchanges."
+      name="description"
+    />
+    <title>Supplier Dashboard | ReSource Supplier</title>
+    <link rel="stylesheet" href="assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="assets/css/design-system.css" />
+    <link rel="stylesheet" href="assets/css/supplier-pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a
+          class="sup-profile"
+          href="pages/supplier/supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-dashboard.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span></a
+          ><a
+            class="sup-nav-link"
+            href="pages/supplier/supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a
+            class="sup-nav-link"
+            href="pages/supplier/supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a
+            class="sup-nav-link"
+            href="pages/supplier/supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a
+            class="sup-nav-link"
+            href="pages/supplier/supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="pages/supplier/supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a
+            class="sup-nav-link"
+            href="pages/supplier/supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+
+        <div class="sup-sidebar-foot">
+          <a href="supplier-login.html" class="sup-logout-link">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head" id="dashboard">
+          <div>
+            <h1>Supplier Dashboard</h1>
+            <p>Manage your listings, incoming requests and exchanges</p>
+          </div>
+          <span class="sup-date">Friday, Oct 30, 2026</span>
+        </header>
+        <section aria-label="Supplier overview statistics" class="sup-stats">
+          <article class="sup-stat">
+            <div class="sup-stat-icon green">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+                <path d="M14 3v5h5M8 12h8M8 16h8"></path>
+              </svg>
+            </div>
+            <strong>8</strong><span>Active Listings</span>
+          </article>
+          <article class="sup-stat">
+            <div class="sup-stat-icon blue">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M4 4h16v13H9l-5 4z"></path>
+                <path d="M8 9h8M8 13h5"></path>
+              </svg>
+            </div>
+            <strong>5</strong><span>New Requests</span>
+          </article>
+          <article class="sup-stat" id="quotation-summary">
+            <div class="sup-stat-icon orange">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M4 4h16v14H4z"></path>
+                <path d="M8 8h8M8 12h5M8 16h8"></path>
+                <path d="m15 19 2 2 4-4"></path>
+              </svg>
+            </div>
+            <strong>8</strong><span>Quotations Sent</span>
+          </article>
+          <article class="sup-stat">
+            <div class="sup-stat-icon purple">
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="m12 3 9 5-9 5-9-5z"></path>
+                <path d="M3 8v9l9 5 9-5V8M12 13v9"></path>
+              </svg>
+            </div>
+            <strong>3</strong><span>Active Orders</span>
+          </article>
+        </section>
+        <section
+          aria-label="Supplier activity indicators"
+          class="sup-activity-strip"
+        >
+          <div>
+            <span>Total Listed Quantity</span
+            ><strong>2,350 kg <small>+ 700 pcs</small></strong>
+          </div>
+          <div><span>Completed Exchanges</span><strong>27</strong></div>
+          <div>
+            <span>Listings Needing Attention</span
+            ><strong>2 <small class="attention">review / update</small></strong>
+          </div>
+        </section>
+        <section class="sup-top-grid">
+          <section class="sup-panel" id="buyer-requests">
+            <div class="sup-panel-head">
+              <h2>Recent Buyer Requests</h2>
+              <a href="pages/supplier/supplier-buyer-requests.html">View All</a>
+            </div>
+            <div class="sup-table-wrap">
+              <table class="sup-table">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Required Quantity</th>
+                    <th>Location</th>
+                    <th>Deadline</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Plastic Bottles</td>
+                    <td>500 kg</td>
+                    <td>Dhaka</td>
+                    <td>Dec 20, 2026</td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-buyer-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Wood Pallets</td>
+                    <td>100 pieces</td>
+                    <td>Chattogram</td>
+                    <td>Dec 25, 2026</td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-buyer-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Textile Offcuts</td>
+                    <td>300 kg</td>
+                    <td>Gazipur</td>
+                    <td>Dec 18, 2026</td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-buyer-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="sup-panel" id="my-listings">
+            <div class="sup-panel-head">
+              <h2>My Listings Overview</h2>
+              <a href="pages/supplier/supplier-my-listings.html">View All</a>
+            </div>
+            <div class="sup-list-overview">
+              <div class="sup-list-row">
+                <img
+                  alt="Used wooden pallets"
+                  src="assets/images/materials/wooden-pallets.jpg"
+                />
+                <div>
+                  <strong>Used Wooden Pallets</strong
+                  ><small>200 pieces &middot; Dhaka</small>
+                </div>
+                <span class="sup-status active">Active</span
+                ><a
+                  aria-label="View wooden pallet listing"
+                  class="sup-more"
+                  href="pages/supplier/supplier-my-listings.html"
+                  >&rsaquo;</a
+                >
+              </div>
+              <div class="sup-list-row">
+                <img
+                  alt="Reusable plastic crates"
+                  src="assets/images/materials/selected-plastics.jpg"
+                />
+                <div>
+                  <strong>Plastic Crates</strong
+                  ><small>500 pieces &middot; Chattogram</small>
+                </div>
+                <span class="sup-status review">Pending</span
+                ><a
+                  aria-label="View plastic crates listing"
+                  class="sup-more"
+                  href="pages/supplier/supplier-my-listings.html"
+                  >&rsaquo;</a
+                >
+              </div>
+              <div class="sup-list-row">
+                <img
+                  alt="Fabric offcuts"
+                  src="assets/images/materials/textile-offcuts.jpg"
+                />
+                <div>
+                  <strong>Fabric Offcuts</strong
+                  ><small>300 kg &middot; Gazipur</small>
+                </div>
+                <span class="sup-status active">Active</span
+                ><a
+                  aria-label="View textile listing"
+                  class="sup-more"
+                  href="pages/supplier/supplier-my-listings.html"
+                  >&rsaquo;</a
+                >
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="sup-bottom-grid">
+          <section class="sup-panel">
+            <div class="sup-panel-head">
+              <h2>Material Listings Status</h2>
+              <span class="sup-date">Last 7 Days</span>
+            </div>
+            <div
+              aria-label="Bar chart of active, pending and sold or exchanged material listings from October 24 to October 30, 2026"
+              class="sup-chart"
+              role="img"
+            >
+              <div class="sup-ylabels">
+                <span>20</span><span>15</span><span>10</span><span>5</span
+                ><span>0</span>
+              </div>
+              <div class="sup-bars">
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 52%"></i
+                    ><i class="sup-bar pending" style="height: 26%"></i
+                    ><i class="sup-bar sold" style="height: 18%"></i>
+                  </div>
+                  <small>Oct 24</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 72%"></i
+                    ><i class="sup-bar pending" style="height: 24%"></i
+                    ><i class="sup-bar sold" style="height: 10%"></i>
+                  </div>
+                  <small>Oct 25</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 88%"></i
+                    ><i class="sup-bar pending" style="height: 22%"></i
+                    ><i class="sup-bar sold" style="height: 21%"></i>
+                  </div>
+                  <small>Oct 26</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 51%"></i
+                    ><i class="sup-bar pending" style="height: 25%"></i
+                    ><i class="sup-bar sold" style="height: 14%"></i>
+                  </div>
+                  <small>Oct 27</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 45%"></i
+                    ><i class="sup-bar pending" style="height: 21%"></i
+                    ><i class="sup-bar sold" style="height: 20%"></i>
+                  </div>
+                  <small>Oct 28</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 50%"></i
+                    ><i class="sup-bar pending" style="height: 16%"></i
+                    ><i class="sup-bar sold" style="height: 12%"></i>
+                  </div>
+                  <small>Oct 29</small>
+                </div>
+                <div class="sup-day">
+                  <div class="sup-bar-stack">
+                    <i class="sup-bar" style="height: 39%"></i
+                    ><i class="sup-bar pending" style="height: 17%"></i
+                    ><i class="sup-bar sold" style="height: 15%"></i>
+                  </div>
+                  <small>Oct 30</small>
+                </div>
+              </div>
+            </div>
+            <div class="sup-legend">
+              <span><i></i>Active</span
+              ><span><i class="orange"></i>Pending</span
+              ><span><i class="blue"></i>Sold / Exchanged</span>
+            </div>
+          </section>
+          <section class="sup-panel" id="active-orders">
+            <div class="sup-panel-head">
+              <h2>My Active Orders</h2>
+              <a href="pages/supplier/supplier-active-orders.html">View All</a>
+            </div>
+            <div class="sup-table-wrap">
+              <table class="sup-table">
+                <thead>
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Material</th>
+                    <th>Buyer</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#SO-001</td>
+                    <td>Plastic Bottles</td>
+                    <td>ABC Traders</td>
+                    <td>500 kg</td>
+                    <td><span class="sup-status review">In Progress</span></td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-active-orders.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#SO-002</td>
+                    <td>Wood Scrap</td>
+                    <td>Green Mart</td>
+                    <td>1,000 kg</td>
+                    <td><span class="sup-status accepted">Shipped</span></td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-active-orders.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#SO-003</td>
+                    <td>Cardboard Boxes</td>
+                    <td>Recycle Hub</td>
+                    <td>300 pieces</td>
+                    <td><span class="sup-status pending">Pending</span></td>
+                    <td>
+                      <a
+                        class="sup-btn"
+                        href="pages/supplier/supplier-active-orders.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+        <section class="sup-panel" id="messages">
+          <div class="sup-panel-head">
+            <h2>Quick Actions</h2>
+            <span class="sup-date">Supplier shortcuts</span>
+          </div>
+          <div class="sup-quick-grid">
+            <a class="sup-quick" href="pages/supplier/supplier-my-listings.html"
+              ><svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M12 5v14M5 12h14"></path></svg
+              ><span>Create New Listing</span></a
+            ><a
+              class="sup-quick"
+              href="pages/supplier/supplier-buyer-requests.html"
+              ><svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M4 4h16v13H9l-5 4z"></path>
+                <path d="M8 9h8M8 13h5"></path></svg
+              ><span>View Buyer Requests</span></a
+            ><a
+              class="sup-quick"
+              href="pages/supplier/supplier-my-quotations.html"
+              ><svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M4 4h16v14H4z"></path>
+                <path d="M8 8h8M8 12h5M8 16h8"></path>
+                <path d="m15 19 2 2 4-4"></path></svg
+              ><span>Manage Quotations</span></a
+            ><a
+              class="sup-quick"
+              href="pages/supplier/supplier-active-orders.html"
+              ><svg aria-hidden="true" viewbox="0 0 24 24">
+                <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+                <circle cx="9" cy="19" r="1.5"></circle>
+                <circle cx="17" cy="19" r="1.5"></circle></svg
+              ><span>Open Active Orders</span></a
+            >
+          </div>
+          <div class="sup-notice warning" id="notifications">
+            <strong>Listing moderation:</strong> Your Plastic Crates listing is
+            pending review. You will receive a notice when the admin reviews it.
+          </div>
+          <div class="sup-notice info">
+            <strong>New message:</strong> ABC Traders asked about the available
+            quantity of Plastic Bottles.
+            <a href="pages/supplier/supplier-messages.html">Open messages</a>.
+          </div>
+        </section>
+        <section
+          aria-label="Listing performance and required actions"
+          class="sup-page-grid equal sup-dashboard-extra"
+        >
+          <section class="sup-panel" id="listing-health">
+            <div class="sup-panel-head">
+              <h2>Listing Health</h2>
+              <a href="pages/supplier/supplier-my-listings.html"
+                >Manage listings</a
+              >
+            </div>
+            <p class="sup-muted">
+              Current distribution across your 12 listing records.
+            </p>
+            <div class="sup-health-list">
+              <div class="sup-health-row">
+                <div><span>Active</span><strong>8</strong></div>
+                <div class="sup-health-track">
+                  <i class="active" style="width: 66.7%"></i>
+                </div>
+              </div>
+              <div class="sup-health-row">
+                <div><span>Pending review</span><strong>2</strong></div>
+                <div class="sup-health-track">
+                  <i class="pending" style="width: 16.7%"></i>
+                </div>
+              </div>
+              <div class="sup-health-row">
+                <div><span>Paused</span><strong>1</strong></div>
+                <div class="sup-health-track">
+                  <i class="paused" style="width: 8.3%"></i>
+                </div>
+              </div>
+              <div class="sup-health-row">
+                <div><span>Completed</span><strong>1</strong></div>
+                <div class="sup-health-track">
+                  <i class="completed" style="width: 8.3%"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sup-panel" id="supplier-actions-required">
+            <div class="sup-panel-head">
+              <h2>Attention Required</h2>
+              <span class="sup-status pending">2 items</span>
+            </div>
+            <div class="sup-attention-item">
+              <span class="sup-attention-icon amber">!</span>
+              <div>
+                <strong>Plastic Crates awaiting review</strong
+                ><small>Check the listing details and submitted photos.</small
+                ><a href="supplier-my-listings.html#pending-listings"
+                  >Review listing</a
+                >
+              </div>
+            </div>
+            <div class="sup-attention-item">
+              <span class="sup-attention-icon blue">&nearrow;</span>
+              <div>
+                <strong>Buyer requests need a response</strong
+                ><small
+                  >Review open requests and prepare suitable quotations.</small
+                ><a href="pages/supplier/supplier-buyer-requests.html"
+                  >Open buyer requests</a
+                >
+              </div>
+            </div>
+          </section>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+    <script src="assets/js/supplier-dashboard.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; Active Orders."
+      name="description"
+    />
+    <title>Active Orders | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-modern.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="../../supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+
+          <a class="sup-nav-link" href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a class="sup-nav-link" href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a class="sup-nav-link" href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a class="sup-nav-link" href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <a href="supplier-login.html" class="sup-logout-link"></a>
+          <div aria-disabled="true" aria-label="Logout" class="sup-logout-link">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path></svg
+            ><span>Logout</span>
+          </div>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>Active Orders</h1>
+            <p>
+              Track accepted exchanges, dispatch milestones and order issues.
+            </p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <div class="sup-summary-row">
+          <div class="sup-summary-box">
+            <span>Active orders</span><strong>3</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Preparing</span><strong>1</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Dispatched</span><strong>1</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Completed exchanges</span><strong>27</strong>
+          </div>
+        </div>
+        <div class="sup-pill-row">
+          <a class="sup-pill active" href="#all-orders">All Orders (7)</a
+          ><a class="sup-pill" href="#open-orders">Open (3)</a
+          ><a class="sup-pill" href="#order-004">Completed (3)</a
+          ><a class="sup-pill" href="#order-006">Cancelled (1)</a>
+        </div>
+        <section class="sup-content-card" id="all-orders">
+          <h2>Exchange &amp; Order Tracking</h2>
+          <div class="sup-table-wrap">
+            <table class="sup-table">
+              <thead>
+                <tr>
+                  <th>Order Reference</th>
+                  <th>Buyer</th>
+                  <th>Material</th>
+                  <th>Agreed Qty</th>
+                  <th>Total Price</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="open-orders">
+                  <td>#SO-001</td>
+                  <td>ABC Traders</td>
+                  <td>Plastic Bottles</td>
+                  <td>500 kg</td>
+                  <td>৳ 24,000</td>
+                  <td>Oct 26, 2026</td>
+                  <td><span class="sup-status preparing">Preparing</span></td>
+                  <td><a class="sup-btn sm" href="#order-001">Track</a></td>
+                </tr>
+                <tr>
+                  <td>#SO-002</td>
+                  <td>Green Mart</td>
+                  <td>Wooden Pallets</td>
+                  <td>100 pcs</td>
+                  <td>৳ 28,000</td>
+                  <td>Oct 24, 2026</td>
+                  <td><span class="sup-status dispatched">Dispatched</span></td>
+                  <td><a class="sup-btn sm" href="#order-002">Track</a></td>
+                </tr>
+                <tr id="order-003">
+                  <td>#SO-003</td>
+                  <td>Recycle Hub</td>
+                  <td>Cardboard Boxes</td>
+                  <td>300 pcs</td>
+                  <td>৳ 2,700</td>
+                  <td>Oct 22, 2026</td>
+                  <td><span class="sup-status review">Accepted</span></td>
+                  <td><a class="sup-btn sm" href="#order-003">Track</a></td>
+                </tr>
+                <tr id="order-004">
+                  <td>#SO-004</td>
+                  <td>Textile Works</td>
+                  <td>Textile Offcuts</td>
+                  <td>250 kg</td>
+                  <td>৳ 9,500</td>
+                  <td>Oct 12, 2026</td>
+                  <td><span class="sup-status completed">Completed</span></td>
+                  <td>
+                    <a class="sup-btn outline sm" href="#order-004">Details</a>
+                  </td>
+                </tr>
+                <tr id="order-005">
+                  <td>#SO-005</td>
+                  <td>Metro Reuse</td>
+                  <td>Surplus Supplies</td>
+                  <td>120 kg</td>
+                  <td>৳ 13,800</td>
+                  <td>Oct 08, 2026</td>
+                  <td><span class="sup-status completed">Completed</span></td>
+                  <td>
+                    <a class="sup-btn outline sm" href="#order-005">Details</a>
+                  </td>
+                </tr>
+                <tr id="order-006">
+                  <td>#SO-006</td>
+                  <td>North Traders</td>
+                  <td>Plastic Crates</td>
+                  <td>80 pcs</td>
+                  <td>৳ 5,200</td>
+                  <td>Oct 05, 2026</td>
+                  <td><span class="sup-status cancelled">Cancelled</span></td>
+                  <td>
+                    <a class="sup-btn outline sm" href="#order-006">Details</a>
+                  </td>
+                </tr>
+                <tr id="order-007">
+                  <td>#SO-007</td>
+                  <td>Chattogram Packaging Ltd.</td>
+                  <td>Reusable Storage Drums</td>
+                  <td>40 pcs</td>
+                  <td>৳ 7,200</td>
+                  <td>Oct 18, 2026</td>
+                  <td><span class="sup-status completed">Completed</span></td>
+                  <td>
+                    <a
+                      class="sup-btn outline sm"
+                      href="supplier-completed-record.html"
+                      >Details</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="sup-page-grid equal">
+          <section class="sup-content-card" id="order-001">
+            <div class="sup-order-head">
+              <h2>Order #SO-001 &middot; Plastic Bottles</h2>
+              <span class="sup-status preparing">Preparing</span>
+            </div>
+            <p class="sup-muted">
+              Buyer: ABC Traders &middot; 500 kg &middot; Agreed total: ৳ 24,000
+              &middot; Condition: Clean / sorted
+            </p>
+            <div class="sup-timeline">
+              <div class="sup-step done">
+                <span class="dot">&checkmark;</span><strong>Accepted</strong
+                ><small>Oct 26 &middot; 10:30</small>
+              </div>
+              <div class="sup-step current">
+                <span class="dot">2</span><strong>Preparing</strong
+                ><small>In progress</small>
+              </div>
+              <div class="sup-step">
+                <span class="dot">3</span><strong>Dispatched</strong
+                ><small>Pending</small>
+              </div>
+              <div class="sup-step">
+                <span class="dot">4</span><strong>Received</strong
+                ><small>Pending</small>
+              </div>
+              <div class="sup-step">
+                <span class="dot">5</span><strong>Completed</strong
+                ><small>Pending</small>
+              </div>
+            </div>
+            <form action="#order-001" class="sup-form" method="get">
+              <div class="sup-field">
+                <label for="order-status">Update order status</label
+                ><select
+                  aria-label="Update order status"
+                  id="order-status"
+                  name="order_status"
+                >
+                  <option>Accepted</option>
+                  <option>Preparing</option>
+                  <option>Dispatched</option>
+                  <option>Received</option>
+                  <option>Completed</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="dispatch-datetime"
+                  >Dispatch / handover date and time</label
+                ><input
+                  id="dispatch-datetime"
+                  name="dispatch_datetime"
+                  type="datetime-local"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="dispatch-note">Dispatch notes</label
+                ><textarea
+                  id="dispatch-note"
+                  name="dispatch_notes"
+                  placeholder="Add dispatch information and handover notes"
+                ></textarea>
+              </div>
+              <button class="sup-btn green" type="submit">Save Update</button>
+            </form>
+          </section>
+          <section class="sup-content-card" id="order-002">
+            <h2>Order #SO-002 &middot; Wooden Pallets</h2>
+            <p class="sup-muted">
+              Buyer: Green Mart &middot; 100 pieces &middot; ৳ 28,000 &middot;
+              Chattogram
+            </p>
+            <div class="sup-timeline">
+              <div class="sup-step done">
+                <span class="dot">&checkmark;</span><strong>Accepted</strong>
+              </div>
+              <div class="sup-step done">
+                <span class="dot">&checkmark;</span><strong>Preparing</strong>
+              </div>
+              <div class="sup-step current">
+                <span class="dot">3</span><strong>Dispatched</strong>
+              </div>
+              <div class="sup-step">
+                <span class="dot">4</span><strong>Received</strong>
+              </div>
+              <div class="sup-step">
+                <span class="dot">5</span><strong>Completed</strong>
+              </div>
+            </div>
+            <div class="sup-notice info">
+              Dispatch recorded: Oct 27, 2026 &middot; 2:20 PM. Delivery
+              confirmation pending.
+            </div>
+            <a class="sup-link" href="supplier-messages.html"
+              >Open buyer conversation &rarr;</a
+            >
+          </section>
+        </div>
+        <section class="sup-content-card">
+          <h2>Report an Exchange Problem</h2>
+          <form action="#" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="issue-order">Order reference</label
+                ><select id="issue-order" name="order_reference">
+                  <option>#SO-001</option>
+                  <option>#SO-002</option>
+                  <option>#SO-003</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="issue-type">Issue type</label
+                ><select id="issue-type" name="issue_type">
+                  <option>Quantity disagreement</option>
+                  <option>Material condition concern</option>
+                  <option>Delivery / handover issue</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="issue-details">Details</label
+                ><textarea
+                  id="issue-details"
+                  name="issue_details"
+                  placeholder="Describe the problem and relevant details"
+                ></textarea>
+              </div>
+            </div>
+            <button class="sup-btn danger" type="submit">
+              Submit Issue Report
+            </button>
+          </form>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>

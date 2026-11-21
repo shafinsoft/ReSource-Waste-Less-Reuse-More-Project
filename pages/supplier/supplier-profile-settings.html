@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; Profile Settings."
+      name="description"
+    />
+    <title>Profile Settings | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a class="sup-nav-link" href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a class="sup-nav-link" href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a class="sup-nav-link" href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a class="sup-nav-link" href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <a href="supplier-login.html" class="sup-logout-link">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>Profile Settings</h1>
+            <p>
+              Manage business information, verification, reviews and notices.
+            </p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <div class="sup-tabs">
+          <a class="active" href="#company-profile">Company Profile</a
+          ><a href="#verification">Verification</a
+          ><a href="#supplier-reviews">Reviews</a
+          ><a href="#account-notices">Account Notices</a
+          ><a href="#notification-preferences">Notifications</a>
+        </div>
+        <div class="sup-profile-grid">
+          <section class="sup-content-card" id="company-profile">
+            <div class="sup-profile-badge">
+              <div class="sup-company-avatar">GF</div>
+              <div>
+                <h2 style="margin: 0 0 4px">Green Factory Ltd.</h2>
+                <span class="sup-status active">Supplier account</span>
+                <p class="sup-muted">
+                  Member since January 2023 &middot; Chattogram, Bangladesh
+                </p>
+              </div>
+            </div>
+            <h2>Business Information</h2>
+            <form action="#company-profile" class="sup-form" method="get">
+              <div class="sup-form-grid">
+                <div class="sup-field">
+                  <label for="company-name">Organization name</label
+                  ><input
+                    id="company-name"
+                    name="organization_name"
+                    value="Green Factory Ltd."
+                  />
+                </div>
+                <div class="sup-field">
+                  <label for="business-type">Business type</label
+                  ><select id="business-type" name="business_type">
+                    <option>Recycling and reusable materials</option>
+                    <option>Manufacturer</option>
+                    <option>Trading</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="sup-field">
+                  <label for="supplier-email">Email address</label
+                  ><input
+                    id="supplier-email"
+                    name="email"
+                    type="email"
+                    value="contact@greenfactory.example"
+                  />
+                </div>
+                <div class="sup-field">
+                  <label for="supplier-phone">Phone number</label
+                  ><input
+                    id="supplier-phone"
+                    name="phone"
+                    type="tel"
+                    value="017XXXXXXXX"
+                  />
+                </div>
+                <div class="sup-field">
+                  <label for="supplier-district">District</label
+                  ><select id="supplier-district" name="district">
+                    <option>Chattogram</option>
+                    <option>Dhaka</option>
+                    <option>Gazipur</option>
+                    <option>Narayanganj</option>
+                  </select>
+                </div>
+                <div class="sup-field">
+                  <label for="supplier-address">Service location</label
+                  ><input
+                    id="supplier-address"
+                    name="service_location"
+                    value="Chattogram, Bangladesh"
+                  />
+                </div>
+                <div class="sup-field span-2">
+                  <label for="supplier-description">Profile description</label
+                  ><textarea id="supplier-description" name="description">
+We provide reusable wooden pallets, selected plastics and surplus materials for industrial reuse.</textarea
+                  >
+                </div>
+              </div>
+              <div class="sup-form-actions">
+                <button class="sup-btn green" type="submit">
+                  Update Profile
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="sup-content-card" id="verification">
+            <h2>Business Verification</h2>
+            <p class="sup-muted">
+              Optional information for the platform verification process.
+            </p>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Verification status</span
+                ><strong
+                  ><span class="sup-status active">Verified</span></strong
+                >
+              </div>
+              <div class="sup-info-item">
+                <span>Business document</span
+                ><strong>Trade licence &middot; Submitted</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Last reviewed</span><strong>Sep 18, 2026</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Supplier rating</span><strong>4.7 / 5.0</strong>
+              </div>
+            </div>
+            <form
+              action="#verification"
+              class="sup-form"
+              method="get"
+              style="margin-top: 14px"
+            >
+              <div class="sup-field">
+                <label for="verification-file"
+                  >Upload updated verification document</label
+                ><input
+                  accept=".pdf,.jpg,.jpeg,.png"
+                  id="verification-file"
+                  name="verification_document"
+                  type="file"
+                />
+              </div>
+              <button class="sup-btn outline" type="submit">
+                Submit Document
+              </button>
+            </form>
+          </section>
+        </div>
+        <section class="sup-content-card" id="supplier-reviews">
+          <div class="sup-panel-head">
+            <h2>Reviews &amp; Feedback</h2>
+            <span class="sup-date">Average rating: 4.7 / 5</span>
+          </div>
+          <article class="sup-review">
+            <div class="sup-review-head">
+              <strong>ABC Traders</strong
+              ><span class="sup-stars"
+                >&starf;&starf;&starf;&starf;&starf;</span
+              >
+            </div>
+            <p>
+              &ldquo;Material quality was good and the agreed quantity was
+              accurate. Communication was helpful.&rdquo;
+            </p>
+            <small>Completed exchange &middot; Oct 12, 2026</small>
+            <div class="sup-review-response">
+              Supplier response: Thank you for your feedback. We appreciate your
+              business.
+            </div>
+          </article>
+          <article class="sup-review">
+            <div class="sup-review-head">
+              <strong>Green Mart</strong
+              ><span class="sup-stars">&starf;&starf;&starf;&starf;&star;</span>
+            </div>
+            <p>
+              &ldquo;Pallets were in good condition and ready on
+              schedule.&rdquo;
+            </p>
+            <small>Completed exchange &middot; Sep 28, 2026</small>
+            <div class="sup-review-response">
+              Supplier response: Thank you. We are glad the materials met your
+              requirements.
+            </div>
+          </article>
+          <article class="sup-review">
+            <div class="sup-review-head">
+              <strong>Recycle Hub</strong
+              ><span class="sup-stars"
+                >&starf;&starf;&starf;&starf;&starf;</span
+              >
+            </div>
+            <p>
+              &ldquo;Accurate description and smooth exchange process.&rdquo;
+            </p>
+            <small>Completed exchange &middot; Sep 11, 2026</small>
+            <div class="sup-action-row">
+              <a class="sup-btn outline sm" href="#review-response"
+                >Respond to review</a
+              ><a class="sup-btn danger sm" href="#report-review"
+                >Report review</a
+              >
+            </div>
+          </article>
+        </section>
+        <div class="sup-page-grid equal">
+          <section class="sup-content-card" id="account-notices">
+            <h2>Account &amp; Moderation Notices</h2>
+            <div class="sup-notice warning">
+              <strong>Listing review:</strong> Plastic Crates is pending
+              moderation. Please ensure photos and material condition details
+              are accurate.
+            </div>
+            <div class="sup-notice info">
+              <strong>Profile guidance:</strong> Keep contact, service location
+              and business description up to date.
+            </div>
+            <div class="sup-notice">
+              <strong>Trust reminder:</strong> Describe material quality
+              accurately and retain exchange communication records.
+            </div>
+          </section>
+          <section class="sup-content-card" id="review-response">
+            <h2>Respond to a Review</h2>
+            <form action="#review-response" class="sup-form" method="get">
+              <div class="sup-field">
+                <label for="review-select">Select review</label
+                ><select id="review-select" name="review_id">
+                  <option>Recycle Hub &mdash; Oct 2026</option>
+                  <option>ABC Traders &mdash; Oct 2026</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="review-reply">Your response</label
+                ><textarea
+                  id="review-reply"
+                  name="response"
+                  placeholder="Write a professional response"
+                ></textarea>
+              </div>
+              <button class="sup-btn green" type="submit">Save Response</button>
+            </form>
+          </section>
+        </div>
+        <section class="sup-content-card" id="report-review">
+          <h2>Report an Inappropriate Review</h2>
+          <form action="#report-review" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="report-review-id">Review</label
+                ><select id="report-review-id" name="review_id">
+                  <option>Recycle Hub &mdash; Oct 2026</option>
+                  <option>ABC Traders &mdash; Oct 2026</option>
+                </select>
+              </div>
+              <div class="sup-field">
+                <label for="report-reason">Reason</label
+                ><select id="report-reason" name="reason">
+                  <option>Abusive or inappropriate content</option>
+                  <option>Unrelated to the exchange</option>
+                  <option>False or misleading information</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="report-note">Details</label
+                ><textarea
+                  id="report-note"
+                  name="details"
+                  placeholder="Explain why this review should be reviewed"
+                ></textarea>
+              </div>
+            </div>
+            <button class="sup-btn danger" type="submit">Submit Report</button>
+          </form>
+        </section>
+        <section class="sup-content-card" id="notification-preferences">
+          <div class="sup-panel-head">
+            <h2>Notification Preferences</h2>
+            <span class="sup-date">Communication settings</span>
+          </div>
+          <p class="sup-muted">
+            Choose which platform updates you would like to receive.
+          </p>
+          <form
+            action="#notification-preferences"
+            class="sup-form"
+            method="get"
+          >
+            <div class="sup-preference-list">
+              <label class="sup-preference"
+                ><span
+                  ><strong>New buyer requests</strong
+                  ><small
+                    >Receive updates when buyers publish requests matching your
+                    materials.</small
+                  ></span
+                ><input checked="" name="notify_buyer_requests" type="checkbox"
+              /></label>
+              <label class="sup-preference"
+                ><span
+                  ><strong>Quotation updates</strong
+                  ><small
+                    >Receive a notice when a buyer views or responds to your
+                    quotation.</small
+                  ></span
+                ><input
+                  checked=""
+                  name="notify_quotation_updates"
+                  type="checkbox"
+              /></label>
+              <label class="sup-preference"
+                ><span
+                  ><strong>Messages</strong
+                  ><small
+                    >Receive alerts when a buyer sends a message.</small
+                  ></span
+                ><input checked="" name="notify_messages" type="checkbox"
+              /></label>
+              <label class="sup-preference"
+                ><span
+                  ><strong>Order status</strong
+                  ><small
+                    >Receive updates about accepted exchanges and order
+                    milestones.</small
+                  ></span
+                ><input checked="" name="notify_order_status" type="checkbox"
+              /></label>
+              <label class="sup-preference"
+                ><span
+                  ><strong>Moderation and account notices</strong
+                  ><small
+                    >Receive listing review decisions and important account
+                    notices.</small
+                  ></span
+                ><input checked="" name="notify_moderation" type="checkbox"
+              /></label>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">
+                Save Preferences
+              </button>
+            </div>
+          </form>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>

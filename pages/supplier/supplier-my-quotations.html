@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; My Quotations."
+      name="description"
+    />
+    <title>My Quotations | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a class="sup-nav-link" href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a class="sup-nav-link" href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a class="sup-nav-link" href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a class="sup-nav-link" href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <div aria-disabled="true" aria-label="Logout" class="sup-logout-link">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path></svg
+            ><span>Logout</span>
+          </div>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>My Quotations</h1>
+            <p>Review submitted offers and track quotation status.</p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <div class="sup-summary-row">
+          <div class="sup-summary-box">
+            <span>Total quotations</span><strong>8</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Viewed</span><strong>2</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Accepted</span><strong>2</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Awaiting response</span><strong>3</strong>
+          </div>
+        </div>
+        <div class="sup-content-card">
+          <div class="sup-panel-head">
+            <h2>Quotation History</h2>
+            <span class="sup-date">Updated recently</span>
+          </div>
+          <div class="sup-pill-row">
+            <a class="sup-pill active" href="#all-quotes">All (8)</a
+            ><a class="sup-pill" href="#awaiting">Submitted (3)</a
+            ><a class="sup-pill" href="#viewed">Viewed (2)</a
+            ><a class="sup-pill" href="#accepted">Accepted (2)</a
+            ><a class="sup-pill" href="#rejected">Rejected / Expired (1)</a>
+          </div>
+          <div class="sup-table-wrap" id="all-quotes">
+            <table class="sup-table">
+              <thead>
+                <tr>
+                  <th>Quotation ID</th>
+                  <th>Material</th>
+                  <th>Buyer</th>
+                  <th>Offered Qty</th>
+                  <th>Unit Price</th>
+                  <th>Total Price</th>
+                  <th>Validity</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="viewed">
+                  <td>#QT-2026-041</td>
+                  <td>Plastic Bottles</td>
+                  <td>ABC Traders</td>
+                  <td>500 kg</td>
+                  <td>৳ 48/kg</td>
+                  <td>৳ 24,000</td>
+                  <td>7 days</td>
+                  <td><span class="sup-status review">Viewed</span></td>
+                  <td><a class="sup-btn sm" href="#quote-041">Details</a></td>
+                </tr>
+                <tr id="accepted">
+                  <td>#QT-2026-040</td>
+                  <td>Wooden Pallets</td>
+                  <td>Green Mart</td>
+                  <td>100 pcs</td>
+                  <td>৳ 280/pc</td>
+                  <td>৳ 28,000</td>
+                  <td>5 days</td>
+                  <td><span class="sup-status active">Accepted</span></td>
+                  <td>
+                    <a class="sup-btn sm" href="supplier-active-orders.html"
+                      >View Order</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>#QT-2026-039</td>
+                  <td>Textile Offcuts</td>
+                  <td>Textile Works</td>
+                  <td>300 kg</td>
+                  <td>৳ 38/kg</td>
+                  <td>৳ 11,400</td>
+                  <td>3 days</td>
+                  <td><span class="sup-status review">Viewed</span></td>
+                  <td><a class="sup-btn sm" href="#quote-039">Details</a></td>
+                </tr>
+                <tr>
+                  <td>#QT-2026-038</td>
+                  <td>Cardboard Boxes</td>
+                  <td>Recycle Hub</td>
+                  <td>200 pcs</td>
+                  <td>৳ 9/pc</td>
+                  <td>৳ 1,800</td>
+                  <td>7 days</td>
+                  <td><span class="sup-status active">Accepted</span></td>
+                  <td>
+                    <a class="sup-btn sm" href="supplier-active-orders.html"
+                      >View Order</a
+                    >
+                  </td>
+                </tr>
+                <tr id="rejected">
+                  <td>#QT-2026-037</td>
+                  <td>Surplus Supplies</td>
+                  <td>Metro Reuse</td>
+                  <td>150 kg</td>
+                  <td>৳ 115/kg</td>
+                  <td>৳ 17,250</td>
+                  <td>Expired</td>
+                  <td><span class="sup-status expired">Expired</span></td>
+                  <td>
+                    <a class="sup-btn outline sm" href="#quote-037">Details</a>
+                  </td>
+                </tr>
+                <tr id="awaiting">
+                  <td>#QT-2026-036</td>
+                  <td>Textile Offcuts</td>
+                  <td>Textile Works</td>
+                  <td>300 kg</td>
+                  <td>৳ 39/kg</td>
+                  <td>৳ 11,700</td>
+                  <td>5 days</td>
+                  <td><span class="sup-status review">Submitted</span></td>
+                  <td><a class="sup-btn sm" href="#quote-036">Details</a></td>
+                </tr>
+                <tr>
+                  <td>#QT-2026-035</td>
+                  <td>Plastic Crates</td>
+                  <td>Green Mart</td>
+                  <td>200 pcs</td>
+                  <td>৳ 62/pc</td>
+                  <td>৳ 12,400</td>
+                  <td>7 days</td>
+                  <td><span class="sup-status review">Submitted</span></td>
+                  <td><a class="sup-btn sm" href="#quote-035">Details</a></td>
+                </tr>
+                <tr>
+                  <td>#QT-2026-034</td>
+                  <td>Reusable Wood</td>
+                  <td>Metro Reuse</td>
+                  <td>150 pcs</td>
+                  <td>৳ 260/pc</td>
+                  <td>৳ 39,000</td>
+                  <td>7 days</td>
+                  <td><span class="sup-status review">Submitted</span></td>
+                  <td><a class="sup-btn sm" href="#quote-034">Details</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="sup-page-grid equal">
+          <section class="sup-content-card" id="quote-041">
+            <h2>Quotation #QT-2026-041</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Clean Used Plastic Bottles</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>ABC Traders</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>500 kg</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 24,000</strong>
+              </div>
+            </div>
+            <p class="sup-muted">
+              Terms: Ex-warehouse. Quotation valid for 7 days from submission.
+            </p>
+          </section>
+          <section class="sup-content-card" id="quote-039">
+            <h2>Quotation #QT-2026-039</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Mixed Textile Offcuts</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>Textile Works</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>300 kg</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 11,400</strong>
+              </div>
+            </div>
+            <p class="sup-muted">
+              Terms: Delivery available within Gazipur. Validity 3 days.
+            </p>
+          </section>
+          <section class="sup-content-card" id="quote-037">
+            <h2>Quotation #QT-2026-037</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Mixed Surplus Supplies</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>Metro Reuse</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>150 kg</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 17,250</strong>
+              </div>
+            </div>
+            <p class="sup-muted">
+              Expired on Oct 28, 2026. This offer is no longer available for
+              acceptance.
+            </p>
+          </section>
+          <section class="sup-content-card" id="quote-036">
+            <h2>Quotation #QT-2026-036</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Textile Offcuts</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>Textile Works</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>300 kg</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 11,700</strong>
+              </div>
+            </div>
+            <p class="sup-muted">
+              Terms: Delivery available in Gazipur. Valid for 5 days.
+            </p>
+            <div class="sup-action-row sup-quote-actions">
+              <a class="sup-btn outline sm" href="#edit-quote-036"
+                >Edit quotation</a
+              ><a class="sup-btn danger sm" href="#withdraw-quote-036"
+                >Withdraw</a
+              >
+            </div>
+          </section>
+          <section class="sup-content-card" id="quote-035">
+            <h2>Quotation #QT-2026-035</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Plastic Crates</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>Green Mart</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>200 pieces</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 12,400</strong>
+              </div>
+            </div>
+            <p class="sup-muted">
+              Terms: Buyer pickup from Chattogram. Valid for 7 days.
+            </p>
+            <div class="sup-action-row sup-quote-actions">
+              <a class="sup-btn outline sm" href="#edit-quote-035"
+                >Edit quotation</a
+              ><a class="sup-btn danger sm" href="#withdraw-quote-035"
+                >Withdraw</a
+              >
+            </div>
+          </section>
+          <section class="sup-content-card" id="quote-034">
+            <h2>Quotation #QT-2026-034</h2>
+            <div class="sup-info-grid">
+              <div class="sup-info-item">
+                <span>Material</span><strong>Reusable Wood</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Buyer</span><strong>Metro Reuse</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Offered quantity</span><strong>150 pieces</strong>
+              </div>
+              <div class="sup-info-item">
+                <span>Total</span><strong>৳ 39,000</strong>
+              </div>
+            </div>
+            <p class="sup-muted">Terms: Ex-warehouse. Valid for 7 days.</p>
+            <div class="sup-action-row sup-quote-actions">
+              <a class="sup-btn outline sm" href="#edit-quote-034"
+                >Edit quotation</a
+              ><a class="sup-btn danger sm" href="#withdraw-quote-034"
+                >Withdraw</a
+              >
+            </div>
+          </section>
+        </div>
+        <section class="sup-content-card sup-quote-editor" id="edit-quote-036">
+          <div class="sup-panel-head">
+            <h2>Edit Quotation #QT-2026-036</h2>
+            <a href="#quote-036">Back to quotation</a>
+          </div>
+          <p class="sup-muted">
+            Update the offer details while the quotation remains eligible for
+            changes.
+          </p>
+          <form action="#edit-quote-036" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="edit-q-036-qty">Offered quantity</label
+                ><input
+                  id="edit-q-036-qty"
+                  min="1"
+                  name="offered_quantity"
+                  required=""
+                  type="number"
+                  value="300"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-036-unit">Unit</label
+                ><input
+                  id="edit-q-036-unit"
+                  name="unit"
+                  readonly=""
+                  value="kg"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-036-price">Unit price (৳)</label
+                ><input
+                  id="edit-q-036-price"
+                  min="0"
+                  name="unit_price"
+                  required=""
+                  type="number"
+                  value="39"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-036-validity">Validity</label
+                ><select id="edit-q-036-validity" name="validity">
+                  <option>3 days</option>
+                  <option selected="">5 days</option>
+                  <option>10 days</option>
+                  <option>14 days</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="edit-q-036-terms">Terms</label
+                ><textarea id="edit-q-036-terms" name="terms">
+Delivery available in Gazipur.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">
+                Save Quotation Changes</button
+              ><a class="sup-btn outline" href="#quote-036">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section
+          class="sup-content-card sup-withdraw-panel"
+          id="withdraw-quote-036"
+        >
+          <h2>Withdraw Quotation #QT-2026-036</h2>
+          <p class="sup-muted">
+            A quotation should only be withdrawn if it has not been accepted by
+            the buyer. Withdrawal confirmation will be connected in the next
+            implementation stage.
+          </p>
+          <label class="sup-checkbox"
+            ><input name="confirm_withdraw_036" type="checkbox" /> I confirm
+            that this quotation is still eligible for withdrawal.</label
+          >
+          <div class="sup-form-actions">
+            <a class="sup-btn outline" href="#quote-036">Back to quotation</a>
+          </div>
+        </section>
+        <section class="sup-content-card sup-quote-editor" id="edit-quote-035">
+          <div class="sup-panel-head">
+            <h2>Edit Quotation #QT-2026-035</h2>
+            <a href="#quote-035">Back to quotation</a>
+          </div>
+          <p class="sup-muted">
+            Update the offer details while the quotation remains eligible for
+            changes.
+          </p>
+          <form action="#edit-quote-035" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="edit-q-035-qty">Offered quantity</label
+                ><input
+                  id="edit-q-035-qty"
+                  min="1"
+                  name="offered_quantity"
+                  required=""
+                  type="number"
+                  value="200"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-035-unit">Unit</label
+                ><input
+                  id="edit-q-035-unit"
+                  name="unit"
+                  readonly=""
+                  value="pieces"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-035-price">Unit price (৳)</label
+                ><input
+                  id="edit-q-035-price"
+                  min="0"
+                  name="unit_price"
+                  required=""
+                  type="number"
+                  value="62"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-035-validity">Validity</label
+                ><select id="edit-q-035-validity" name="validity">
+                  <option>3 days</option>
+                  <option selected="">7 days</option>
+                  <option>10 days</option>
+                  <option>14 days</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="edit-q-035-terms">Terms</label
+                ><textarea id="edit-q-035-terms" name="terms">
+Buyer pickup from Chattogram.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">
+                Save Quotation Changes</button
+              ><a class="sup-btn outline" href="#quote-035">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section
+          class="sup-content-card sup-withdraw-panel"
+          id="withdraw-quote-035"
+        >
+          <h2>Withdraw Quotation #QT-2026-035</h2>
+          <p class="sup-muted">
+            A quotation should only be withdrawn if it has not been accepted by
+            the buyer. Withdrawal confirmation will be connected in the next
+            implementation stage.
+          </p>
+          <label class="sup-checkbox"
+            ><input name="confirm_withdraw_035" type="checkbox" /> I confirm
+            that this quotation is still eligible for withdrawal.</label
+          >
+          <div class="sup-form-actions">
+            <a class="sup-btn outline" href="#quote-035">Back to quotation</a>
+          </div>
+        </section>
+        <section class="sup-content-card sup-quote-editor" id="edit-quote-034">
+          <div class="sup-panel-head">
+            <h2>Edit Quotation #QT-2026-034</h2>
+            <a href="#quote-034">Back to quotation</a>
+          </div>
+          <p class="sup-muted">
+            Update the offer details while the quotation remains eligible for
+            changes.
+          </p>
+          <form action="#edit-quote-034" class="sup-form" method="get">
+            <div class="sup-form-grid">
+              <div class="sup-field">
+                <label for="edit-q-034-qty">Offered quantity</label
+                ><input
+                  id="edit-q-034-qty"
+                  min="1"
+                  name="offered_quantity"
+                  required=""
+                  type="number"
+                  value="150"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-034-unit">Unit</label
+                ><input
+                  id="edit-q-034-unit"
+                  name="unit"
+                  readonly=""
+                  value="pieces"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-034-price">Unit price (৳)</label
+                ><input
+                  id="edit-q-034-price"
+                  min="0"
+                  name="unit_price"
+                  required=""
+                  type="number"
+                  value="260"
+                />
+              </div>
+              <div class="sup-field">
+                <label for="edit-q-034-validity">Validity</label
+                ><select id="edit-q-034-validity" name="validity">
+                  <option>3 days</option>
+                  <option selected="">7 days</option>
+                  <option>10 days</option>
+                  <option>14 days</option>
+                </select>
+              </div>
+              <div class="sup-field span-2">
+                <label for="edit-q-034-terms">Terms</label
+                ><textarea id="edit-q-034-terms" name="terms">
+Ex-warehouse collection.</textarea
+                >
+              </div>
+            </div>
+            <div class="sup-form-actions">
+              <button class="sup-btn green" type="submit">
+                Save Quotation Changes</button
+              ><a class="sup-btn outline" href="#quote-034">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <section
+          class="sup-content-card sup-withdraw-panel"
+          id="withdraw-quote-034"
+        >
+          <h2>Withdraw Quotation #QT-2026-034</h2>
+          <p class="sup-muted">
+            A quotation should only be withdrawn if it has not been accepted by
+            the buyer. Withdrawal confirmation will be connected in the next
+            implementation stage.
+          </p>
+          <label class="sup-checkbox"
+            ><input name="confirm_withdraw_034" type="checkbox" /> I confirm
+            that this quotation is still eligible for withdrawal.</label
+          >
+          <div class="sup-form-actions">
+            <a class="sup-btn outline" href="#quote-034">Back to quotation</a>
+          </div>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>

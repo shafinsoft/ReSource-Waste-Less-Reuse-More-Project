@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ReSource Buyer Dashboard — find reusable materials, manage requests, compare quotations and track exchanges."
+    />
+    <title>Buyer Dashboard | ReSource</title>
+    <link href="../../assets/css/design-system.css" rel="stylesheet" />
+    <link href="../../assets/css/buyer-pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main"></a>
+    <header class="topbar" id="top">
+      <a
+        class="brand"
+        href="buyer-dashboard.html"
+        aria-label="ReSource Buyer Dashboard"
+      >
+        <img class="brand-logo" src="assets/images/logo/1.png" alt="ReSource" />
+      </a>
+      <div class="topbar-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="topbar-right">
+        <a
+          class="notification"
+          href="pages/buyer/messages.html"
+          aria-label="Notifications"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot"></span>
+        </a>
+        <span class="top-divider"></span>
+        <a href="pages/buyer/profile-settings.html" class="profile-trigger">
+          <span class="avatar" aria-hidden="true"
+            ><svg viewBox="0 0 40 40">
+              <circle cx="20" cy="13" r="7" />
+              <path d="M7 34c1-8 6-12 13-12s12 4 13 12" /></svg
+          ></span>
+          <span class="profile-label"
+            ><strong>Mehbub Mostaque</strong><small>Buyer</small></span
+          >
+          <svg class="chevron" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="m5 7 5 5 5-5" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="Buyer navigation">
+        <nav class="side-nav">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="buyer-dashboard.html"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              />
+              <path d="M8 5V3h3" /></svg
+            ><span>Dashboard</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/browse-materials.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+            ><span>Search Materials</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/my-requests.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+              <path d="M14 3v5h5M8 12h7M8 16h7" /></svg
+            ><span>My Requests</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/matching-quotations.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8l-5 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+              />
+              <path d="m7 10 2 2 4-4M14 14h4" /></svg
+            ><span>Received Quotations</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/my-orders.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M2 3h2l2.5 13.5A2 2 0 0 0 8.5 18H19M6 7h15l-2 8H7M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+              /></svg
+            ><span>My Orders</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/messages.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m3 6 9 7 9-7" /></svg
+            ><span>Messages</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/profile-settings.html#reviews">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m12 2.5 3 6.1 6.7 1-4.8 4.7 1.1 6.7-6-3.2-6 3.2 1.1-6.7-4.8-4.7 6.7-1z"
+              /></svg
+            ><span>Reviews</span>
+          </a>
+          <a class="nav-link" href="pages/buyer/profile-settings.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="7" r="4" />
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z" /></svg
+            ><span>Profile Settings</span>
+          </a>
+        </nav>
+        <a class="logout-link" href="buyer-login.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"
+            /></svg
+          ><span>Logout</span>
+        </a>
+      </aside>
+
+      <main class="main-content" id="main" data-section="dashboard">
+        <section class="page-heading">
+          <div>
+            <h1>Buyer Dashboard</h1>
+            <p>Find materials and manage your requests</p>
+          </div>
+          <span class="today-pill">Thursday, Oct 29, 2026</span>
+        </section>
+
+        <section
+          class="search-panel"
+          id="materials"
+          aria-label="Search materials"
+        >
+          <form class="search-form" action="#materials" method="get">
+            <label class="search-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5" />
+                <path d="m16 16 5 5" />
+              </svg>
+              <input
+                type="search"
+                name="q"
+                placeholder="Search materials (e.g. plastic, wood, metal, fabric...)"
+                aria-label="Search materials"
+              />
+            </label>
+            <label class="category-select"
+              ><span class="visually-hidden">Category</span>
+              <select name="category">
+                <option>All Categories</option>
+                <option>Plastics</option>
+                <option>Wood</option>
+                <option>Textile Offcuts</option>
+                <option>Packaging</option>
+                <option>Surplus Supplies</option>
+              </select>
+            </label>
+            <button class="primary-button" type="submit">Search</button>
+          </form>
+        </section>
+
+        <section class="stats-grid" aria-label="Buyer account statistics">
+          <article class="stat-card">
+            <div class="stat-icon green">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 3h11l4 4v14H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+                <path d="M15 3v5h5M8 12h8M8 16h8M8 8h3" />
+              </svg>
+            </div>
+            <strong class="stat-number">3</strong
+            ><span class="stat-label">Active Requests</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7l-5 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+                />
+                <path d="M8 9h8M8 13h5" />
+              </svg>
+            </div>
+            <strong class="stat-number">12</strong
+            ><span class="stat-label">Quotations Received</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon orange">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v10M8 9l4 4 4-4M5 14v6h14v-6" />
+                <path d="M8 3h8" />
+              </svg>
+            </div>
+            <strong class="stat-number">2</strong
+            ><span class="stat-label">Active Orders</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon purple">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="m7 12 3.3 3.3L17 8.5" />
+              </svg>
+            </div>
+            <strong class="stat-number">5</strong
+            ><span class="stat-label">Completed Orders</span>
+          </article>
+        </section>
+
+        <section class="top-panels">
+          <article class="panel" id="quotations">
+            <div class="panel-heading">
+              <h2>Recent Quotations</h2>
+              <a href="pages/buyer/matching-quotations.html">View All</a>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table quotation-table">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Supplier</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Plastic Granules</td>
+                    <td class="muted-cell">ABC Traders</td>
+                    <td>৳ 50/kg</td>
+                    <td>৳ 25,000</td>
+                    <td><span class="status green-status">New</span></td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/matching-quotations.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Wood Scrap</td>
+                    <td class="muted-cell">Green Factory</td>
+                    <td>৳ 30/kg</td>
+                    <td>৳ 15,000</td>
+                    <td><span class="status green-status">Reviewed</span></td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/matching-quotations.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cardboard Boxes</td>
+                    <td class="muted-cell">Recycle Hub</td>
+                    <td>৳ 10/pc</td>
+                    <td>৳ 5,000</td>
+                    <td><span class="status green-status">New</span></td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/matching-quotations.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel" id="requests">
+            <div class="panel-heading">
+              <h2>My Material Requests</h2>
+              <a href="pages/buyer/my-requests.html">View All</a>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table request-table">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Required Quantity</th>
+                    <th>Location</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Used Plastic Bottles</td>
+                    <td>500 kg</td>
+                    <td>Dhaka</td>
+                    <td>Nov 20, 2026</td>
+                    <td><span class="status green-status">Open</span></td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/my-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Wooden Pallets</td>
+                    <td>100 pieces</td>
+                    <td>Chattogram</td>
+                    <td>Nov 25, 2026</td>
+                    <td><span class="status green-status">Open</span></td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/my-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Textile Offcuts</td>
+                    <td>300 kg</td>
+                    <td>Gazipur</td>
+                    <td>Nov 18, 2026</td>
+                    <td>
+                      <span class="status orange-status">In Progress</span>
+                    </td>
+                    <td>
+                      <a
+                        class="small-button"
+                        href="pages/buyer/my-requests.html"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="bottom-panels">
+          <article class="panel recent-panel" id="request-history">
+            <div class="panel-heading">
+              <h2>My Recent Requests</h2>
+              <a href="pages/buyer/my-requests.html">View All</a>
+            </div>
+            <div class="recent-list">
+              <div class="recent-item">
+                <img
+                  src="assets/images/materials/plastic-bottles.jpg"
+                  alt="Used clear plastic bottles"
+                />
+                <div class="recent-info">
+                  <strong>Used Plastic Bottles</strong
+                  ><span>500 kg <i>•</i> Dhaka <i>•</i> Nov 20, 2026</span>
+                </div>
+                <span class="status green-status">Open</span
+                ><a
+                  class="more-link"
+                  href="pages/buyer/my-requests.html"
+                  aria-label="More options for used plastic bottles"
+                  >⋮</a
+                >
+              </div>
+              <div class="recent-item">
+                <img
+                  src="assets/images/materials/wooden-pallets.jpg"
+                  alt="Stacked reusable wooden pallets"
+                />
+                <div class="recent-info">
+                  <strong>Wooden Pallets</strong
+                  ><span
+                    >100 pieces <i>•</i> Chattogram <i>•</i> Nov 25, 2026</span
+                  >
+                </div>
+                <span class="status green-status">Open</span
+                ><a
+                  class="more-link"
+                  href="pages/buyer/my-requests.html"
+                  aria-label="More options for wooden pallets"
+                  >⋮</a
+                >
+              </div>
+              <div class="recent-item">
+                <img
+                  src="assets/images/materials/textile-offcuts.jpg"
+                  alt="Colorful textile offcuts for reuse"
+                />
+                <div class="recent-info">
+                  <strong>Textile Offcuts</strong
+                  ><span>300 kg <i>•</i> Gazipur <i>•</i> Nov 18, 2026</span>
+                </div>
+                <span class="status orange-status">In Progress</span
+                ><a
+                  class="more-link"
+                  href="pages/buyer/my-requests.html"
+                  aria-label="More options for textile offcuts"
+                  >⋮</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="panel chart-panel">
+            <div class="panel-heading">
+              <h2>Material Requests Status</h2>
+              <span class="select-look"
+                >Last 7 Days
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="m5 7 5 5 5-5" /></svg
+              ></span>
+            </div>
+            <div
+              class="chart"
+              role="img"
+              aria-label="Bar chart showing open, in progress and completed material requests over seven days"
+            >
+              <div class="y-labels">
+                <span>20</span><span>15</span><span>10</span><span>5</span
+                ><span>0</span>
+              </div>
+              <div class="chart-main">
+                <div class="grid-lines">
+                  <i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="bar-groups">
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 50%"></span
+                    ><span class="bar progress" style="height: 25%"></span
+                    ><span class="bar complete" style="height: 17%"></span
+                    ><small>Oct 23</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 68%"></span
+                    ><span class="bar progress" style="height: 28%"></span
+                    ><span class="bar complete" style="height: 22%"></span
+                    ><small>Oct 24</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 86%"></span
+                    ><span class="bar progress" style="height: 22%"></span
+                    ><span class="bar complete" style="height: 17%"></span
+                    ><small>Oct 25</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 49%"></span
+                    ><span class="bar progress" style="height: 32%"></span
+                    ><span class="bar complete" style="height: 23%"></span
+                    ><small>Oct 26</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 43%"></span
+                    ><span class="bar progress" style="height: 19%"></span
+                    ><span class="bar complete" style="height: 14%"></span
+                    ><small>Oct 27</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 48%"></span
+                    ><span class="bar progress" style="height: 25%"></span
+                    ><span class="bar complete" style="height: 20%"></span
+                    ><small>Oct 28</small>
+                  </div>
+                  <div class="bar-group">
+                    <span class="bar open" style="height: 40%"></span
+                    ><span class="bar progress" style="height: 20%"></span
+                    ><span class="bar complete" style="height: 13%"></span
+                    ><small>Oct 29</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <span><i class="legend-dot open"></i>Open</span
+              ><span><i class="legend-dot progress"></i>In Progress</span
+              ><span><i class="legend-dot complete"></i>Completed</span>
+            </div>
+          </article>
+
+          <article class="panel quick-panel">
+            <div class="panel-heading"><h2>Quick Actions</h2></div>
+            <div class="quick-grid">
+              <a
+                class="quick-action quick-blue"
+                href="pages/buyer/browse-materials.html"
+                ><span class="quick-icon"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.5" cy="10.5" r="6.5" />
+                    <path d="m16 16 5 5" /></svg></span
+                ><span>Search Materials</span></a
+              >
+              <a
+                class="quick-action quick-green"
+                href="pages/buyer/material-details-request.html"
+                ><span class="quick-icon"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M5 3h10l4 4v14H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM15 3v5h4M12 11v7M8.5 14.5h7"
+                    /></svg></span
+                ><span>Post New Request</span></a
+              >
+              <a
+                class="quick-action quick-orange"
+                href="pages/buyer/matching-quotations.html"
+                ><span class="quick-icon"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M5 3h10l4 4v14H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM15 3v5h4M8 12h8M8 16h8"
+                    /></svg></span
+                ><span>View Quotations</span></a
+              >
+              <a
+                class="quick-action quick-purple"
+                href="pages/buyer/my-orders.html"
+                ><span class="quick-icon"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M2 3h2l2.5 13.5A2 2 0 0 0 8.5 18H19M6 7h15l-2 8H7"
+                    />
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="18" cy="21" r="1" /></svg></span
+                ><span>Track Orders</span></a
+              >
+            </div>
+          </article>
+        </section>
+
+        <section class="below-grid" aria-label="More buyer workspace sections">
+          <article class="panel" id="orders">
+            <div class="panel-heading">
+              <h2>My Orders</h2>
+              <span class="status blue-status">2 Active</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>RS-2026-0108 · Plastic Granules</strong
+                ><span>ABC Traders · 500 kg · ৳ 25,000</span>
+              </div>
+              <span class="status blue-status">Preparing</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>RS-2026-0097 · Wooden Pallets</strong
+                ><span>Green Factory · 100 pieces · ৳ 15,000</span>
+              </div>
+              <span class="status orange-status">Dispatched</span>
+            </div>
+            <div class="timeline-note">
+              Order status examples are shown for demonstration purposes.
+            </div>
+          </article>
+          <article class="panel" id="messages">
+            <div class="panel-heading">
+              <h2>Messages & Notifications</h2>
+              <a href="pages/buyer/messages.html">View All</a>
+            </div>
+            <div class="message-row">
+              <span class="message-avatar">AB</span>
+              <div>
+                <strong>ABC Traders</strong>
+                <p>Your quotation for Plastic Granules is ready for review.</p>
+                <small>Today · 10:24 AM</small>
+              </div>
+            </div>
+            <div class="message-row">
+              <span class="message-avatar second">GF</span>
+              <div>
+                <strong>Green Factory</strong>
+                <p>
+                  We can supply the requested wooden pallets before the
+                  deadline.
+                </p>
+                <small>Yesterday · 4:15 PM</small>
+              </div>
+            </div>
+          </article>
+          <article class="panel" id="reviews">
+            <div class="panel-heading">
+              <h2>Reviews</h2>
+              <a href="pages/buyer/profile-settings.html#reviews"
+                >Review History</a
+              >
+            </div>
+            <p class="section-copy">
+              Share feedback after an exchange has been completed.
+            </p>
+            <form class="review-form" action="#reviews" method="get">
+              <label
+                >Completed exchange<select name="exchange">
+                  <option>Choose a completed order</option>
+                  <option>RS-2026-0061 · Cardboard Boxes</option>
+                </select></label
+              >
+              <label
+                >Your feedback<textarea
+                  name="feedback"
+                  rows="3"
+                  placeholder="Write about material quality and the exchange..."
+                ></textarea>
+              </label>
+              <button class="primary-button compact" type="submit">
+                Submit Review
+              </button>
+            </form>
+          </article>
+          <article class="panel" id="profile">
+            <div class="panel-heading">
+              <h2>Profile Settings</h2>
+              <span class="status green-status">Buyer</span>
+            </div>
+            <form class="profile-form" action="#profile" method="get">
+              <label
+                >Full name<input
+                  type="text"
+                  value="Mehbub Mostaque"
+                  name="name"
+              /></label>
+              <label
+                >Email address<input
+                  type="email"
+                  value="mehbub@example.com"
+                  name="email"
+              /></label>
+              <label
+                >Phone number<input type="tel" value="01700000000" name="phone"
+              /></label>
+              <label
+                >Location<input
+                  type="text"
+                  value="Dhaka, Bangladesh"
+                  name="location"
+              /></label>
+              <button class="primary-button compact" type="submit">
+                Save Profile
+              </button>
+            </form>
+          </article>
+          <article class="panel" id="new-request">
+            <div class="panel-heading">
+              <h2>Post New Material Request</h2>
+              <span class="status green-status">Buyer</span>
+            </div>
+            <form
+              class="profile-form request-form"
+              action="#new-request"
+              method="get"
+            >
+              <label
+                >Material name<input
+                  type="text"
+                  name="material"
+                  placeholder="e.g. Used plastic bottles"
+              /></label>
+              <div class="form-split">
+                <label
+                  >Quantity<input
+                    type="number"
+                    min="1"
+                    name="quantity"
+                    placeholder="500" /></label
+                ><label
+                  >Unit<select name="unit">
+                    <option>kg</option>
+                    <option>pieces</option>
+                    <option>boxes</option>
+                    <option>rolls</option>
+                  </select></label
+                >
+              </div>
+              <div class="form-split">
+                <label
+                  >Preferred district<input
+                    type="text"
+                    name="district"
+                    placeholder="Dhaka" /></label
+                ><label>Target date<input type="date" name="deadline" /></label>
+              </div>
+              <label
+                >Acceptable condition<select name="condition">
+                  <option>Any usable condition</option>
+                  <option>Good</option>
+                  <option>Very good</option>
+                  <option>For recycling</option>
+                </select></label
+              >
+              <button class="primary-button compact" type="submit">
+                Publish Request
+              </button>
+            </form>
+          </article>
+          <article class="panel" id="quotation-history">
+            <div class="panel-heading">
+              <h2>Quotation History</h2>
+              <span class="status orange-status">Demo</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>Plastic Granules · ABC Traders</strong
+                ><span>৳ 50/kg · Total ৳ 25,000 · Valid until Nov 5, 2026</span>
+              </div>
+              <span class="status green-status">New</span>
+            </div>
+            <div class="order-row">
+              <div>
+                <strong>Wood Scrap · Green Factory</strong
+                ><span>৳ 30/kg · Total ৳ 15,000 · Valid until Nov 3, 2026</span>
+              </div>
+              <span class="status green-status">Reviewed</span>
+            </div>
+            <p class="timeline-note">
+              Compare the offered quantity, unit price, total price, validity
+              and terms before selecting an offer.
+            </p>
+          </article>
+        </section>
+        <footer class="page-footer">
+          © 2026 ReSource · Reuse materials, reduce waste.
+        </footer>
+      </main>
+    </div>
+    <script src="../../assets/js/buyer-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ReSource buyer marketplace — reusable and surplus materials."
+    />
+    <title>My Orders & Exchange Tracking | ReSource Buyer</title>
+    <link rel="stylesheet" href="../../assets/css/buyer-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="buyer-topbar">
+      <a
+        class="buyer-brand"
+        href="../../buyer-dashboard.html"
+        aria-label="ReSource Buyer Dashboard"
+        ><img
+          class="brand-logo"
+          src="../../assets/images/logo/resource-logo.svg"
+          alt="ReSource"
+      /></a>
+      <div class="topbar-right">
+        <a class="bell" href="messages.html" aria-label="Notifications"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9" />
+            <path d="M10 21h4" /></svg></a
+        ><a
+          class="account"
+          href="profile-settings.html"
+          aria-label="Open buyer profile"
+          ><span class="avatar">MM</span
+          ><span class="account-copy"
+            ><strong>Mehbub Mostaque</strong><small>Buyer</small></span
+          ><span class="down">⌄</span></a
+        >
+      </div>
+    </header>
+    <div class="buyer-layout">
+      <aside class="buyer-sidebar" aria-label="Buyer navigation">
+        <nav class="buyer-side-nav" aria-label="Buyer pages">
+          <a class="side-link" href="../../buyer-dashboard.html"
+            ><span class="nav-icon">⌂</span><span>Dashboard</span></a
+          ><a class="side-link" href="browse-materials.html"
+            ><span class="nav-icon">⌕</span><span>Search Materials</span></a
+          ><a class="side-link" href="my-requests.html"
+            ><span class="nav-icon">▤</span><span>My Requests</span></a
+          ><a class="side-link" href="matching-quotations.html"
+            ><span class="nav-icon">▣</span><span>Received Quotations</span></a
+          ><a class="side-link active" aria-current="page" href="my-orders.html"
+            ><span class="nav-icon">🛒</span><span>My Orders</span></a
+          ><a class="side-link" href="messages.html"
+            ><span class="nav-icon">✉</span><span>Messages</span></a
+          ><a class="side-link" href="profile-settings.html#reviews"
+            ><span class="nav-icon">★</span><span>Reviews</span></a
+          ><a class="side-link" href="profile-settings.html"
+            ><span class="nav-icon">♙</span><span>Profile Settings</span></a
+          >
+        </nav>
+        <a class="side-link logout" href="../../buyer-login.html"
+          ><span class="nav-icon">⇥</span><span>Logout</span></a
+        >
+      </aside>
+      <main class="buyer-main" id="main">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">Buyer / Resource Seeker</p>
+            <h1>My Orders & Exchange Tracking</h1>
+            <p>Track active, completed and cancelled material exchanges.</p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="card panel">
+            <p class="eyebrow">Active Orders</p>
+            <div class="price" style="font-size: 28px; color: #14213d">2</div>
+            <p class="muted" style="margin: 3px 0">In preparation or transit</p>
+          </div>
+          <div class="card panel">
+            <p class="eyebrow">Completed</p>
+            <div class="price" style="font-size: 28px">5</div>
+            <p class="muted" style="margin: 3px 0">Exchanges completed</p>
+          </div>
+          <div class="card panel">
+            <p class="eyebrow">Cancelled</p>
+            <div class="price" style="font-size: 28px; color: #b93434">1</div>
+            <p class="muted" style="margin: 3px 0">Cancelled exchanges</p>
+          </div>
+        </div>
+        <section class="section-gap">
+          <div class="panel-title">
+            <h2>My Orders & Exchange Tracking</h2>
+            <span class="muted" style="font-size: 12px"
+              >Latest status updates first</span
+            >
+          </div>
+          <article class="card order-card">
+            <div class="order-card-head">
+              <div class="order-product">
+                <img
+                  src="../../assets/images/materials/wooden-pallets.jpg"
+                  alt="Wooden pallets"
+                />
+                <div>
+                  <h3>Wooden Pallets · 100 pieces</h3>
+                  <p>
+                    Order #ORD-2026-0041 · Green Factory · Created Nov 10, 2026
+                  </p>
+                  <p>
+                    Agreed amount: <strong>৳ 30,000</strong> · Condition: Used
+                    (Good)
+                  </p>
+                </div>
+              </div>
+              <span class="status progress">Dispatched</span>
+            </div>
+            <div class="timeline">
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Accepted</strong
+                ><small>Nov 10 · 10:30</small>
+              </div>
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Preparing</strong
+                ><small>Nov 11 · 09:15</small>
+              </div>
+              <div class="timeline-step current">
+                <span class="timeline-dot">3</span><strong>Dispatched</strong
+                ><small>Nov 12 · 14:20</small>
+              </div>
+              <div class="timeline-step">
+                <span class="timeline-dot">4</span><strong>Received</strong
+                ><small>Pending</small>
+              </div>
+              <div class="timeline-step">
+                <span class="timeline-dot">5</span><strong>Completed</strong
+                ><small>Pending</small>
+              </div>
+            </div>
+            <div class="notice">
+              Latest update · Supplier dispatched 100 wooden pallets from
+              Chattogram warehouse on Nov 12, 2026 at 2:20 PM.
+            </div>
+            <div class="actions-row">
+              <a class="btn outline" href="#order-timeline">View Details</a>
+              <form action="my-orders.html" method="get">
+                <button class="btn green" type="submit">
+                  Confirm Receipt (Demo)
+                </button>
+              </form>
+              <a class="btn danger" href="messages.html">Report a Problem</a>
+            </div>
+          </article>
+          <article class="card order-card">
+            <div class="order-card-head">
+              <div class="order-product">
+                <img
+                  src="../../assets/images/materials/plastic-bottles.jpg"
+                  alt="Used plastic bottles"
+                />
+                <div>
+                  <h3>Used Plastic Bottles · 500 kg</h3>
+                  <p>
+                    Order #ORD-2026-0038 · ABC Traders · Created Oct 28, 2026
+                  </p>
+                  <p>
+                    Agreed amount: <strong>৳ 25,000</strong> · Condition: Clean
+                    and sorted
+                  </p>
+                </div>
+              </div>
+              <span class="status done">Completed</span>
+            </div>
+            <div class="timeline">
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Accepted</strong
+                ><small>Oct 28 · 10:30</small>
+              </div>
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Preparing</strong
+                ><small>Oct 29 · 09:15</small>
+              </div>
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Dispatched</strong
+                ><small>Oct 30 · 14:20</small>
+              </div>
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Received</strong
+                ><small>Oct 31 · 11:10</small>
+              </div>
+              <div class="timeline-step complete">
+                <span class="timeline-dot">✓</span><strong>Completed</strong
+                ><small>Oct 31 · 11:22</small>
+              </div>
+            </div>
+            <div class="actions-row">
+              <a class="btn outline" href="profile-settings.html#reviews"
+                >Leave a Review</a
+              ><span class="muted" style="font-size: 12px; align-self: center"
+                >Timestamped status history recorded for transparency.</span
+              >
+            </div>
+          </article>
+          <article class="card order-card">
+            <div class="order-card-head">
+              <div class="order-product">
+                <img
+                  src="../../assets/images/materials/textile-offcuts.jpg"
+                  alt="Textile offcuts"
+                />
+                <div>
+                  <h3>Textile Offcuts · 300 kg</h3>
+                  <p>
+                    Order #ORD-2026-0033 · Textile Hub · Created Oct 19, 2026
+                  </p>
+                  <p>Agreed amount: <strong>৳ 12,000</strong></p>
+                </div>
+              </div>
+              <span class="status cancelled">Cancelled</span>
+            </div>
+            <p class="muted" style="font-size: 12px; margin-bottom: 0">
+              Cancelled on Oct 20, 2026 · Reason: Supplier could not provide the
+              agreed quantity.
+            </p>
+          </article>
+        </section>
+        <section class="card panel section-gap" id="order-timeline">
+          <h2 class="subhead">Exchange status guide</h2>
+          <p class="muted" style="font-size: 12px; margin: 0">
+            Accepted → Preparing → Dispatched → Received → Completed. If a
+            problem occurs, report it from the order record so the agreed
+            material, quantity, price and timeline remain available for review.
+          </p>
+        </section>
+        <p class="footer-note">
+          ReSource · Make surplus useful again · Demo data for academic project
+        </p>
+      </main>
+    </div>
+    <script src="../../assets/js/buyer-page.js"></script>
+
+  </body>
+</html>

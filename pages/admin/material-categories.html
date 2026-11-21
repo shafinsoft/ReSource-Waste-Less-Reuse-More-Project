@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Material Categories | ReSource Admin</title>
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-page.css" />
+    <script src="../../assets/js/admin-dashboard.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <div class="admin-layout" id="adminLayout">
+      <aside class="admin-sidebar">
+        <a class="admin-brand" href="../../admin-dashboard.html"
+          ><img src="../../assets/images/logo/1.png" alt="ReSource"
+        /></a>
+        <nav class="admin-navigation" aria-label="Admin navigation">
+          <a class="admin-nav-link" href="../../admin-dashboard.html"
+            ><span class="nav-icon">⌂</span>Dashboard</a
+          ><a class="admin-nav-link" href="user-management.html"
+            ><span class="nav-icon">♟</span>User Management</a
+          ><a class="admin-nav-link" href="listings-management.html"
+            ><span class="nav-icon">▣</span>Listings Management</a
+          ><a class="admin-nav-link active" href="material-categories.html"
+            ><span class="nav-icon">◉</span>Material Categories</a
+          ><a class="admin-nav-link" href="reports-issues.html"
+            ><span class="nav-icon">▤</span>Reports & Issues</a
+          ><a class="admin-nav-link" href="exchanges.html"
+            ><span class="nav-icon">⇄</span>Exchanges</a
+          ><a class="admin-nav-link" href="analytics.html"
+            ><span class="nav-icon">▥</span>Analytics</a
+          ><a class="admin-nav-link" href="settings.html"
+            ><span class="nav-icon">⚙</span>Settings</a
+          >
+        </nav>
+        <div class="admin-sidebar-footer">
+          <a href="#" class="admin-logout-link" data-logout
+            ><span class="nav-icon">⇥</span>Logout</a
+          >
+        </div>
+      </aside>
+      <div class="admin-main">
+        <header class="admin-header">
+          <button
+            class="admin-menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle sidebar"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <div class="admin-header-right">
+            <div class="admin-profile-wrap">
+              <button
+                class="admin-profile"
+                id="profileToggle"
+                aria-expanded="false"
+              >
+                <span class="admin-avatar">A</span
+                ><span class="admin-profile-text"
+                  ><strong>Admin</strong
+                  ><small>Platform Administrator</small></span
+                ><span class="profile-chevron">⌄</span>
+              </button>
+              <div class="admin-profile-dropdown" id="profileDropdown" hidden>
+                <a href="settings.html">Settings</a
+                ><button type="button" data-logout>Logout</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="admin-content">
+          <div class="admin-page-heading">
+            <h1>Material Categories</h1>
+            <p>Maintain material categories and measurement units</p>
+          </div>
+          <section class="admin-panel">
+            <div class="panel-heading">
+              <h2>Categories</h2>
+              <button class="admin-button" id="exportButton" type="button">
+                Export CSV
+              </button>
+            </div>
+            <div class="admin-toolbar">
+              <input
+                class="admin-input"
+                id="tableSearch"
+                type="search"
+                placeholder="Search this page..."
+                aria-label="Search records"
+              /><select
+                class="admin-select"
+                id="statusFilter"
+                aria-label="Filter status"
+              >
+                <option value="">All statuses</option>
+                <option>Active</option>
+                <option>Pending</option>
+                <option>Open</option>
+                <option>Under review</option>
+                <option>Approved</option>
+                <option>Completed</option>
+                <option>Suspended</option>
+                <option>Disputed</option>
+                <option>Reported</option>
+              </select>
+            </div>
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Unit</th>
+                    <th>Listings</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="adminTableBody">
+                  <tr>
+                    <td>Plastic</td>
+                    <td>kg</td>
+                    <td>34</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Metal</td>
+                    <td>kg</td>
+                    <td>27</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Wood</td>
+                    <td>piece</td>
+                    <td>22</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Textile</td>
+                    <td>kg</td>
+                    <td>18</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Paper</td>
+                    <td>kg</td>
+                    <td>12</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Others</td>
+                    <td>unit</td>
+                    <td>7</td>
+                    <td>Active</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer class="admin-footer">
+            ReSource Platform Administration · Demo data
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script src="../../assets/js/admin-dashboard.js" defer></script>
+    <script src="../../assets/js/admin-page.js" defer></script>
+  </body>
+</html>

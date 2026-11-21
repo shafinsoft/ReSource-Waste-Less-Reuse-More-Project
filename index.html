@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Buy, sell, or exchange surplus and reusable materials with ReSource.">
+
+    <title>ReSource | Waste Less, Reuse More</title>
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+     
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- Icon Library -->
+
+    <!-- Homepage JavaScript -->
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-wrap">
+
+            <!-- Logo -->
+            <a class="brand" href="index.html" aria-label="ReSource Home">
+                <img
+                    class="brand-logo"
+                    src="assets/images/logo/1.png"
+                    alt="ReSource Logo">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <i data-lucide="menu"></i>
+            </button>
+
+            <!-- Navigation -->
+            <nav
+                class="main-nav nav-links"
+                id="mainNav"
+                aria-label="Main navigation">
+
+                <a class="nav-link active" href="index.html">
+                    Home
+                </a>
+
+                <a class="nav-link" href="#categories">
+                    Browse Materials
+                </a>
+
+                <a class="nav-link" href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a class="nav-link" href="#about">
+                    About
+                </a>
+
+                <a class="nav-link" href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Login and Signup Buttons -->
+            <div class="nav-actions">
+
+                <a
+                    class="btn btn-outline btn-small login-btn"
+                    href="login.html">
+                    Login
+                </a>
+
+                <a
+                    class="btn btn-primary btn-small supplier-signup-btn"
+                    href="login.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="about">
+
+    <!-- Cinematic recycling footage; poster image remains as a fallback -->
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+        poster="assets/images/hero-background.jpg"
+        aria-hidden="true" tabindex="-1">
+        <source src="assets/videos/recycling-hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            A smarter way to reuse
+        </p>
+
+        <h1>
+            Turn Your<br>
+            Surplus Into<br>
+            <span>Opportunity</span>
+        </h1>
+
+        <p class="hero-copy">
+            Buy, sell or exchange surplus and reusable
+            <br class="desktop-break">
+            materials for a cleaner and better tomorrow.
+        </p>
+
+        <!-- Material Search -->
+        <form class="search-bar" id="material-search-form">
+
+            <label class="search-input">
+
+                <img src="assets/images/icons/icon-search.png" alt="">
+
+                <input
+                    id="material-search"
+                    type="search"
+                    placeholder="Search for materials (e.g., plastic, wood, fabric...)"
+                    aria-label="Search materials">
+
+            </label>
+
+            <!-- Location Filter -->
+            <label class="location-select">
+
+                <img src="assets/images/icons/icon-location.png" alt="">
+
+                <select id="location-filter" aria-label="Choose location">
+
+                    <option value="">All Locations</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="chattogram">Chattogram</option>
+                    <option value="gazipur">Gazipur</option>
+                    <option value="narayanganj">Narayanganj</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                <img
+                    class="select-chevron-img"
+                    src="assets/images/icons/icon-chevron-down.png"
+                    alt="">
+
+            </label>
+
+            <button class="search-submit" type="submit" aria-label="Search materials">
+                <i data-lucide="search"></i>
+            </button>
+
+        </form>
+
+        <!-- Hero Buttons -->
+        <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#categories">
+                Browse Materials
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a class="btn btn-white" href="login.html?intent=request">
+                Post a Material Request
+                <i data-lucide="plus"></i>
+            </a>
+
+        </div>
+
+       <!-- Social Media Links -->
+<div class="hero-social-links">
+
+    <a href="#" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="#" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="#" target="_blank" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+</div>
+
+    </div>
+
+    <!-- Decorative 3D glass elements -->
+    <div class="hero-orbit-art" aria-hidden="true">
+
+        <div class="hero-orbit-ring ring-a"></div>
+        <div class="hero-orbit-ring ring-b"></div>
+
+        <div class="hero-glass-token token-recycle">
+            <span>♻</span>
+        </div>
+
+        <div class="hero-glass-token token-leaf">
+            <span>✦</span>
+        </div>
+
+        <div class="hero-glass-note">
+            <span class="note-dot"></span>
+            <span>
+                <b>REUSE. RETHINK. REPEAT.</b>
+                <small>A circular future starts here</small>
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- ================= PLATFORM BENEFITS ================= -->
+
+        <section
+            class="benefits container"
+            aria-label="Platform benefits">
+
+            <article class="benefit">
+
+                <span class="benefit-icon">
+                    <img
+                        src="assets/images/features/feature-recycle.png"
+                        alt="">
+
+                    <i
+                        data-lucide="recycle"
+                        style="display:none"></i>
+                </span>
+
+                <h3>
+                    Wide Range<br>
+                    of Materials
+                </h3>
+
+            </article>
+
+
+            <article class="benefit">
+
+                <span class="benefit-icon">
+                    <img
+                        src="assets/images/features/feature-users.png"
+                        alt="">
+
+                    <i
+                        data-lucide="users-round"
+                        style="display:none"></i>
+                </span>
+
+                <h3>
+                    Trusted<br>
+                    Suppliers &amp; Buyers
+                </h3>
+
+            </article>
+
+
+            <article class="benefit">
+
+                <span class="benefit-icon">
+                    <img
+                        src="assets/images/features/feature-quotation.png"
+                        alt="">
+
+                    <i
+                        data-lucide="file-check-2"
+                        style="display:none"></i>
+                </span>
+
+                <h3>
+                    Easy<br>
+                    Quotation Comparison
+                </h3>
+
+            </article>
+
+
+            <article class="benefit">
+
+                <span class="benefit-icon">
+                    <img
+                        src="assets/images/features/feature-security.png"
+                        alt="">
+
+                    <i
+                        data-lucide="shield-check"
+                        style="display:none"></i>
+                </span>
+
+                <h3>
+                    Secure<br>
+                    Transactions
+                </h3>
+
+            </article>
+
+
+            <article class="benefit">
+
+                <span class="benefit-icon">
+                    <img
+                        src="assets/images/features/feature-sustainability.png"
+                        alt="">
+
+                    <i
+                        data-lucide="sprout"
+                        style="display:none"></i>
+                </span>
+
+                <h3>
+                    Support a<br>
+                    Sustainable Future
+                </h3>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section
+            class="categories-section container"
+            id="categories">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        Explore the marketplace
+                    </p>
+
+                    <h2>Popular Categories</h2>
+                </div>
+
+                <a class="text-link" href="login.html">
+                    View All
+                    <i data-lucide="arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="category-grid" id="categoryGrid">
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Plastic"
+                    data-category="plastic">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-plastic.png"
+                            alt="Plastic materials">
+
+                        <i
+                            data-lucide="flask-conical"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Plastic</strong>
+                    <span>&amp; Polymer</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Metal"
+                    data-category="metal">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-metal.png"
+                            alt="Metal materials">
+
+                        <i
+                            data-lucide="cylinder"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Metal</strong>
+                    <span>&amp; Scrap</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Wood"
+                    data-category="wood">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-wood.png"
+                            alt="Wood materials">
+
+                        <i
+                            data-lucide="layers"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Wood</strong>
+                    <span>&amp; Timber</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Textile"
+                    data-category="textile">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-textile.png"
+                            alt="Textile materials">
+
+                        <i
+                            data-lucide="package"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Textile</strong>
+                    <span>&amp; Fabric</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Paper"
+                    data-category="paper">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-paper.png"
+                            alt="Paper materials">
+
+                        <i
+                            data-lucide="package-open"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Paper</strong>
+                    <span>&amp; Cardboard</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Glass"
+                    data-category="glass">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-glass.png"
+                            alt="Glass materials">
+
+                        <i
+                            data-lucide="glass-water"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Glass</strong>
+                    <span>&amp; Reusable</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Electronic"
+                    data-category="electronic">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-electronic.png"
+                            alt="Electronic materials">
+
+                        <i
+                            data-lucide="monitor"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Electronic</strong>
+                    <span>&amp; E-Waste</span>
+
+                </a>
+
+
+                <a
+                    class="category-card"
+                    href="login.html?category=Other"
+                    data-category="other">
+
+                    <span class="category-art">
+                        <img
+                            src="assets/images/categories/cat-others.png"
+                            alt="Other reusable materials">
+
+                        <i
+                            data-lucide="ellipsis"
+                            style="display:none"></i>
+                    </span>
+
+                    <strong>Others</strong>
+                    <span>More materials</span>
+
+                </a>
+
+            </div>
+
+            <p
+                class="search-feedback"
+                id="searchFeedback"
+                role="status"
+                aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section
+            class="how-section"
+            id="how-it-works">
+
+            <div class="container how-inner">
+
+                <div class="how-heading">
+
+                    <p class="eyebrow">
+                        Simple, transparent, circular
+                    </p>
+
+                    <h2>How It Works</h2>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <article class="step">
+
+                        <i data-lucide="search"></i>
+
+                        <div>
+                            <h3>Browse Materials</h3>
+                            <p>
+                                Explore available<br>
+                                surplus materials.
+                            </p>
+                        </div>
+
+                        <i
+                            class="step-arrow"
+                            data-lucide="arrow-right"></i>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <i data-lucide="file-text"></i>
+
+                        <div>
+                            <h3>Post Request</h3>
+                            <p>Tell us what you need.</p>
+                        </div>
+
+                        <i
+                            class="step-arrow"
+                            data-lucide="arrow-right"></i>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <i data-lucide="handshake"></i>
+
+                        <div>
+                            <h3>Get Quotations</h3>
+                            <p>
+                                Receive offers from<br>
+                                verified suppliers.
+                            </p>
+                        </div>
+
+                        <i
+                            class="step-arrow"
+                            data-lucide="arrow-right"></i>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <i data-lucide="package-check"></i>
+
+                        <div>
+                            <h3>Make Order</h3>
+                            <p>
+                                Choose and track<br>
+                                your order.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CONTACT + FOOTER ================= -->
+
+    <section class="contact-cta" id="contact">
+        <div class="container contact-cta-inner">
+            <div class="contact-copy">
+                <span class="contact-eyebrow"><span></span> LET'S CONNECT</span>
+                <h2>Have Something to <em>Reuse?</em><br>Let’s Make It Matter.</h2>
+                <p>Every material has another story to tell. Connect with ReSource and help keep useful resources in circulation.</p>
+            </div>
+            <div class="contact-actions">
+                <a class="contact-main-btn" href="mailto:hello@resource.example">
+                    Get in Touch <i data-lucide="arrow-up-right"></i>
+                </a>
+                <span class="contact-note"><i data-lucide="leaf"></i> Small actions. A more circular future.</span>
+            </div>
+            <div class="contact-decoration" aria-hidden="true">
+                <span class="contact-ring"></span>
+                <span class="contact-leaf"><i data-lucide="sprout"></i></span>
+                <span class="contact-orbit-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand-column">
+                <a class="footer-brand" href="index.html">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span>
+                        <strong>ReSource</strong>
+                        <small>Waste Less, Reuse More</small>
+                    </span>
+                </a>
+                <p class="footer-description">A smarter way to exchange surplus and reusable materials for a cleaner, more resourceful tomorrow.</p>
+                <div class="footer-socials" aria-label="Social media">
+
+    <a href="#" target="_blank" rel="noopener noreferrer"
+        aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="#" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="#" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#" target="_blank" rel="noopener noreferrer"
+        aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="#categories">Browse Materials</a>
+                <a href="#how-it-works">How It Works</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <a href="#about">About ReSource</a>
+                <a href="#categories">Material Categories</a>
+                <a href="#how-it-works">Our Process</a>
+            </div>
+
+            <div class="footer-column footer-contact-column">
+                <h3>Get in Touch</h3>
+                <p>Have a question or want to know more about reusing surplus materials?</p>
+                <a class="footer-contact-link" href="mailto:hello@resource.example">
+                    <span><i data-lucide="mail"></i></span>
+                    <span>Email our team <small>We’d love to hear from you</small></span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="current-year">2026</span> ReSource. All Rights Reserved. Designed & Developed by Shafin.</p>
+            <span>Designed for a more circular tomorrow <i data-lucide="heart"></i></span>
+        </div>
+    </footer>
+
+</body>
+</html>

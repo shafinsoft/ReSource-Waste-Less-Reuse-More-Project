@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="ReSource Supplier Workspace &mdash; Buyer Requests."
+      name="description"
+    />
+    <title>Buyer Requests | ReSource Supplier</title>
+    <link rel="stylesheet" href="../../assets/css/supplier-dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/supplier-pages.css" />
+    <link rel="stylesheet" href="../../assets/css/design-system.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sup-topbar">
+      <a
+        aria-label="ReSource Supplier Dashboard"
+        class="sup-brand"
+        href="supplier-dashboard.html"
+        ><img alt="ReSource" src="../../assets/images/logo/1.png"
+      /></a>
+      <div class="sup-top-right">
+        <a
+          aria-label="Notifications"
+          class="sup-notification"
+          href="supplier-dashboard.html#notifications"
+          title="Notifications"
+          ><svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path></svg
+          ><i aria-hidden="true"></i></a
+        ><span class="sup-divider"></span
+        ><a class="sup-profile" href="supplier-profile-settings.html"
+          ><span class="sup-avatar">GF</span
+          ><span class="sup-profile-copy"
+            ><strong>Green Factory Ltd.</strong><small>Supplier</small></span
+          ><svg aria-hidden="true" class="sup-chevron" viewbox="0 0 20 20">
+            <path d="m5 7 5 5 5-5"></path></svg
+        ></a>
+      </div>
+    </header>
+    <div class="sup-layout">
+      <aside aria-label="Supplier navigation" class="sup-sidebar">
+        <nav aria-label="Supplier pages" class="sup-side-nav">
+          <a class="sup-nav-link" href="../../supplier-dashboard.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"
+              ></path>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a class="sup-nav-link" href="supplier-my-listings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M6 3h8l5 5v13H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+              <path d="M14 3v5h5M8 12h8M8 16h8"></path></svg
+            ><span>My Listings</span></a
+          ><a
+            aria-current="page"
+            class="sup-nav-link active"
+            href="supplier-buyer-requests.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v13H9l-5 4z"></path>
+              <path d="M8 9h8M8 13h5"></path></svg
+            ><span>Buyer Requests</span></a
+          ><a class="sup-nav-link" href="supplier-my-quotations.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M4 4h16v14H4z"></path>
+              <path d="M8 8h8M8 12h5M8 16h8"></path>
+              <path d="m15 19 2 2 4-4"></path></svg
+            ><span>My Quotations</span></a
+          ><a class="sup-nav-link" href="supplier-active-orders.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M3 4h2l2.2 11H19l2-8H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle></svg
+            ><span>Active Orders</span></a
+          ><a class="sup-nav-link" href="supplier-messages.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.7 8.7 0 0 1-4-.95L3 21l1.95-5.5A8.7 8.7 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8 8 0 0 1 8 8v.5z"
+              ></path>
+              <path d="M8 10h8M8 14h5"></path></svg
+            ><span>Messages</span></a
+          ><a class="sup-nav-link" href="supplier-profile-settings.html"
+            ><svg aria-hidden="true" viewbox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path></svg
+            ><span>Profile Settings</span></a
+          >
+        </nav>
+        <div class="sup-sidebar-foot">
+          <div aria-disabled="true" aria-label="Logout" class="sup-logout-link">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="M10 17l5-5-5-5M15 12H3"></path>
+              <path d="M13 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"></path></svg
+            ><span>Logout</span>
+          </div>
+        </div>
+      </aside>
+      <main class="sup-main" id="main">
+        <header class="sup-page-head">
+          <div>
+            <p class="sup-eyebrow">RESOURCE PROVIDER</p>
+            <h1>Buyer Requests</h1>
+            <p>Browse material demand and prepare supplier quotations.</p>
+          </div>
+          <span class="sup-date">Supplier Workspace</span>
+        </header>
+        <div class="sup-summary-row">
+          <div class="sup-summary-box">
+            <span>New requests</span><strong>5</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Closing soon</span><strong>2</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Quoted by you</span><strong>3</strong>
+          </div>
+          <div class="sup-summary-box">
+            <span>Matching categories</span><strong>4</strong>
+          </div>
+        </div>
+        <div class="sup-toolbar">
+          <form action="#request-list" class="sup-filter-form" method="get">
+            <input
+              aria-label="Search requests"
+              name="q"
+              placeholder="Search material requests"
+              type="search"
+            /><select aria-label="Filter by material category" name="category">
+              <option>All categories</option>
+              <option>Plastic</option>
+              <option>Wood</option>
+              <option>Textile</option>
+              <option>Packaging</option></select
+            ><select aria-label="Filter by district" name="district">
+              <option>All districts</option>
+              <option>Dhaka</option>
+              <option>Chattogram</option>
+              <option>Gazipur</option></select
+            ><button class="sup-btn" type="submit">Apply Filters</button
+            ><label for="request-quantity">Min. quantity</label
+            ><input
+              id="request-quantity"
+              min="0"
+              name="quantity"
+              placeholder="Quantity"
+              type="number"
+            /><label for="request-condition">Condition</label
+            ><select id="request-condition" name="condition">
+              <option value="Any condition">Any condition</option>
+              <option value="New">New</option>
+              <option value="Used (Good)">Used (Good)</option>
+              <option value="Clean">Clean</option>
+              <option value="Mixed">Mixed</option>
+              <option value="Refurbished">Refurbished</option>
+            </select>
+          </form>
+        </div>
+        <section id="request-list">
+          <article class="sup-request-card" id="request-plastic">
+            <img
+              alt="Plastic bottles"
+              src="../../assets/images/materials/plastic-bottles.jpg"
+            />
+            <div>
+              <h3>Clean Used Plastic Bottles</h3>
+              <p>
+                Buyer: ABC Traders &middot; Required: 500 kg &middot; Location:
+                Dhaka
+              </p>
+              <div class="sup-request-facts">
+                <span>Condition: Clean / sorted</span
+                ><span>Target: Dec 20, 2026</span
+                ><span>Request: BR-2026-014</span>
+              </div>
+              <p class="sup-muted">
+                Notes: Prefer PET bottles, compressed or sorted by color.
+                Regular supply may be considered.
+              </p>
+              <details class="sup-details">
+                <summary>Prepare a quotation</summary>
+                <form
+                  action="#request-plastic"
+                  class="sup-quote-form"
+                  method="get"
+                >
+                  <div class="sup-form-grid">
+                    <div class="sup-field">
+                      <label for="plastic-offer-qty">Offered quantity</label
+                      ><input
+                        id="plastic-offer-qty"
+                        min="0"
+                        name="plastic_offered_quantity"
+                        placeholder="500"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="plastic-unit-price">Unit price (৳/kg)</label
+                      ><input
+                        id="plastic-unit-price"
+                        min="0"
+                        name="plastic_unit_price"
+                        placeholder="48"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="plastic-validity">Validity</label
+                      ><select id="plastic-validity" name="plastic_validity">
+                        <option>3 days</option>
+                        <option>5 days</option>
+                        <option>7 days</option>
+                        <option>10 days</option>
+                      </select>
+                    </div>
+                    <div class="sup-field">
+                      <label for="plastic-terms">Terms</label
+                      ><input
+                        id="plastic-terms"
+                        name="plastic_terms"
+                        placeholder="Ex-warehouse / delivery"
+                      />
+                    </div>
+                  </div>
+                  <div class="sup-field">
+                    <label for="plastic-notes">Additional notes</label
+                    ><textarea
+                      id="plastic-notes"
+                      name="plastic_notes"
+                      placeholder="Availability, pickup or delivery details"
+                    ></textarea>
+                  </div>
+                  <button class="sup-btn green" type="submit">
+                    Submit Quotation
+                  </button>
+                </form>
+              </details>
+            </div>
+            <div class="sup-request-actions">
+              <span class="sup-status active">Open</span
+              ><a class="sup-btn sm" href="#request-plastic">View Request</a>
+            </div>
+          </article>
+          <article class="sup-request-card" id="request-wood">
+            <img
+              alt="Wooden pallets"
+              src="../../assets/images/materials/wooden-pallets.jpg"
+            />
+            <div>
+              <h3>Reusable Wooden Pallets</h3>
+              <p>
+                Buyer: Green Mart &middot; Required: 100 pieces &middot;
+                Location: Chattogram
+              </p>
+              <div class="sup-request-facts">
+                <span>Condition: Used (Good)</span
+                ><span>Target: Dec 25, 2026</span
+                ><span>Request: BR-2026-015</span>
+              </div>
+              <p class="sup-muted">
+                Notes: Standard pallet size preferred. Buyer can collect from
+                supplier location.
+              </p>
+              <details class="sup-details">
+                <summary>Prepare a quotation</summary>
+                <form
+                  action="#request-wood"
+                  class="sup-quote-form"
+                  method="get"
+                >
+                  <div class="sup-form-grid">
+                    <div class="sup-field">
+                      <label for="wood-offer-qty">Offered quantity</label
+                      ><input
+                        id="wood-offer-qty"
+                        min="0"
+                        name="wood_offered_quantity"
+                        placeholder="100"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="wood-unit-price">Unit price (৳/piece)</label
+                      ><input
+                        id="wood-unit-price"
+                        min="0"
+                        name="wood_unit_price"
+                        placeholder="280"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="wood-validity">Validity</label
+                      ><select id="wood-validity" name="wood_validity">
+                        <option>5 days</option>
+                        <option>7 days</option>
+                        <option>10 days</option>
+                      </select>
+                    </div>
+                    <div class="sup-field">
+                      <label for="wood-terms">Terms</label
+                      ><input
+                        id="wood-terms"
+                        name="wood_terms"
+                        placeholder="Buyer pickup"
+                      />
+                    </div>
+                  </div>
+                  <button class="sup-btn green" type="submit">
+                    Submit Quotation
+                  </button>
+                </form>
+              </details>
+            </div>
+            <div class="sup-request-actions">
+              <span class="sup-status active">Open</span
+              ><a class="sup-btn sm" href="#request-wood">View Request</a>
+            </div>
+          </article>
+          <article class="sup-request-card" id="request-textile">
+            <img
+              alt="Textile offcuts"
+              src="../../assets/images/materials/textile-offcuts.jpg"
+            />
+            <div>
+              <h3>Mixed Textile Offcuts</h3>
+              <p>
+                Buyer: Textile Works &middot; Required: 300 kg &middot;
+                Location: Gazipur
+              </p>
+              <div class="sup-request-facts">
+                <span>Condition: Mixed, dry</span
+                ><span>Target: Dec 18, 2026</span
+                ><span>Request: BR-2026-016</span>
+              </div>
+              <p class="sup-muted">
+                Notes: Cotton and polyester mix accepted. No wet or contaminated
+                materials.
+              </p>
+              <details class="sup-details">
+                <summary>Prepare a quotation</summary>
+                <form
+                  action="#request-textile"
+                  class="sup-quote-form"
+                  method="get"
+                >
+                  <div class="sup-form-grid">
+                    <div class="sup-field">
+                      <label for="textile-offer-qty">Offered quantity</label
+                      ><input
+                        id="textile-offer-qty"
+                        min="0"
+                        name="textile_offered_quantity"
+                        placeholder="300"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="textile-unit-price">Unit price (৳/kg)</label
+                      ><input
+                        id="textile-unit-price"
+                        min="0"
+                        name="textile_unit_price"
+                        placeholder="38"
+                        required="required"
+                        type="number"
+                      />
+                    </div>
+                    <div class="sup-field">
+                      <label for="textile-validity">Validity</label
+                      ><select id="textile-validity" name="textile_validity">
+                        <option>3 days</option>
+                        <option>5 days</option>
+                        <option>7 days</option>
+                      </select>
+                    </div>
+                    <div class="sup-field">
+                      <label for="textile-terms">Terms</label
+                      ><input
+                        id="textile-terms"
+                        name="textile_terms"
+                        placeholder="Delivery available"
+                      />
+                    </div>
+                  </div>
+                  <button class="sup-btn green" type="submit">
+                    Submit Quotation
+                  </button>
+                </form>
+              </details>
+            </div>
+            <div class="sup-request-actions">
+              <span class="sup-status active">Open</span
+              ><a class="sup-btn sm" href="#request-textile">View Request</a>
+            </div>
+          </article>
+        </section>
+        <footer class="sup-footer">
+          ReSource &middot; Make surplus useful again &middot; Supplier
+          Workspace
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/js/supplier-page.js" defer></script>
+  </body>
+</html>
